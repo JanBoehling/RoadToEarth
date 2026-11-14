@@ -1,5 +1,3 @@
-using Unity.Android.Types;
-
 public class QuestionsAndAnswer
 {
     public string question;
