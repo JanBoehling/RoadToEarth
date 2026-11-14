@@ -7,7 +7,6 @@ public class SelectImageButton : MonoBehaviour
 {
     private const float SelectedAlpha = .8f;
 
-    [field: SerializeField] public bool IsCorrect { get; private set; }
     [field: SerializeField] public bool IsSelected { get; private set; }
 
     public Image ImageComponent {get; private set;}
@@ -17,6 +16,7 @@ public class SelectImageButton : MonoBehaviour
     {
         ImageComponent = GetComponent<Image>();
         ButtonComponent = GetComponent<Button>();
+        ButtonComponent.onClick.AddListener(ToggleButton);
     }
 
     public void ToggleButton()

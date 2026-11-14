@@ -15,6 +15,7 @@ public class SelectImageCaptcha : Captcha
             {
                 var button = CaptchaImages[GetIndex1D(x, y, 3)];
                 button.ButtonObject.ImageComponent.sprite = button.Img;
+                button.ButtonObject.ImageComponent.color = Color.white;
             }
         }
     }
@@ -28,10 +29,17 @@ public class SelectImageCaptcha : Captcha
         const int FailThreshold = 2;
 
         // Count each incorrect input
-        foreach (var button in CaptchaImages) if ((button.ButtonObject.IsSelected && !button.IsCorrect) || (!button.ButtonObject.IsSelected && button.IsCorrect)) failCount++;
+        foreach (var button in CaptchaImages)
+        {
+            if ((button.ButtonObject.IsSelected && !(button.IsCorrect)) || (!(button.ButtonObject.IsSelected) && button.IsCorrect)) failCount++;
+        }
+
+        bool success = failCount < FailThreshold;
 
         Debug.Log(failCount);
-        return failCount > FailThreshold;
+        Debug.Log(success);
+
+        return success;
     }
 
     public void EvaluateSelectImageCaptcha()
@@ -40,12 +48,21 @@ public class SelectImageCaptcha : Captcha
         GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
     }
 
+    public void Refresh()
+    {
+        foreach(var item in CaptchaImages)
+        {
+            item.ButtonObject.ButtonComponent.interactable = true;
+            if (item.ButtonObject.IsSelected) item.ButtonObject.ToggleButton();
+        }
+    }
+
     public static int GetIndex1D(int x, int y, int rowCount) => y + rowCount * x;
 
     // DEBUG STUFF
-    public void DoCheck() => Check();
+    public void DebugDoCheck() => Check();
 
-    public void ResetScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+    public void DebugResetScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
 
     private void DebugLogCorrectImages()
     {
