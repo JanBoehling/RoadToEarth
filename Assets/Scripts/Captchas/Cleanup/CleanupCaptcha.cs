@@ -21,7 +21,7 @@ public class CleanupCaptcha : MonoBehaviour
         ToggleObjectInteraction(_secondaryObjects, false);
         ToggleObjectInteraction(_tertiaryObjects, false);
 
-        if (_promptTextBox) StartCoroutine(DisplayPromptText());
+        if (_promptTextBox) _promptTextBox.text = _promptText; //StartCoroutine(DisplayPromptText());
     }
 
     public void DestroyObject(GameObject obj)
