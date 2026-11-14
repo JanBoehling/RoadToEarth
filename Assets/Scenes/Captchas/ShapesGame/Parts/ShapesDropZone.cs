@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ShapesDropZone : MonoBehaviour, IDropHandler
 {
-    public event Action ShapeDropped;
+    public event Action<ShapesDropZone> ShapeDropped;
 
     private RectTransform rectTrans;
     
@@ -15,20 +15,22 @@ public class ShapesDropZone : MonoBehaviour, IDropHandler
     }
     
     [SerializeField] private ShapesGameShape.ShapeType acceptedType;
+    public ShapesGameShape.ShapeType AcceptedType => acceptedType;
     
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag != null)
-        {
-            Debug.Log($"{eventData.pointerDrag.name} was dropped onto {acceptedType}!");
-            if (!eventData.pointerDrag.TryGetComponent<ShapesGameShape>(out var shape)) return;
-            if (!AcceptsShape(shape.shapeType)) return;
+        if (eventData.pointerDrag == null) return;
+        
+        Debug.Log($"{eventData.pointerDrag.name} was dropped onto {acceptedType}!");
+        if (!eventData.pointerDrag.TryGetComponent<ShapesGameShape>(out var shape)) return;
+        if (!AcceptsShape(shape.shapeType)) return;
             
-            Debug.Log("Accepted");
-            if (!shape.TryGetComponent<DraggableImage>(out var draggable)) return;
-            draggable.SnapToDropZone(rectTrans);
-            eventData.pointerDrag.GetComponent<RectTransform>().position = transform.position;
-        }
+        Debug.Log("Accepted");
+        if (!shape.TryGetComponent<DraggableImage>(out var draggable)) return;
+        draggable.OnDroppedOnZone(rectTrans);
+        eventData.pointerDrag.GetComponent<RectTransform>().position = transform.position;
+        
+        ShapeDropped?.Invoke(this);
     }
 
     private bool AcceptsShape(ShapesGameShape.ShapeType shape)

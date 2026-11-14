@@ -13,6 +13,8 @@ public class DraggableImage : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
     private Vector2 pointerOffset;
     private bool droppedOnZone;
 
+    public bool IsDropped => droppedOnZone;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -62,10 +64,12 @@ public class DraggableImage : MonoBehaviour, IBeginDragHandler, IDragHandler, IE
         }
     }
     
-    public void SnapToDropZone(RectTransform dropZoneRect)
+    public void OnDroppedOnZone(RectTransform dropZoneRect)
     {
         droppedOnZone = true;
-        //transform.SetParent(dropZoneRect);
-        //rectTransform.anchoredPosition = Vector2.zero;
+        if (TryGetComponent<SimpleShrinkUI>(out var shrink))
+        {
+            shrink.Shrink();
+        }
     }
 }
