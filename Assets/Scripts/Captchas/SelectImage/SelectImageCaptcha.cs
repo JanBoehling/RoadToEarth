@@ -47,7 +47,9 @@ public class SelectImageCaptcha : Captcha
         bool success = Check();
         GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
 
-        FindAnyObjectByType<CaptchaController>().LoadNextCaptcha();
+        var controller = FindAnyObjectByType<CaptchaController>();
+        if (controller) controller.LoadNextCaptcha();
+        else Debug.LogWarning("Count not find CaptchaController in scene!");
     }
 
     public void Refresh()
