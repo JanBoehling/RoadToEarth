@@ -38,6 +38,7 @@ public class SelectImageCaptchaEditor : Editor
 
         if (_target.CaptchaImages == null || _target.CaptchaImages.Count < RowCount * RowCount)
         {
+            _target.CaptchaImages = new();
             for (int i = 0; i < RowCount * RowCount; i++) _target.CaptchaImages.Add(new());
         }
         
