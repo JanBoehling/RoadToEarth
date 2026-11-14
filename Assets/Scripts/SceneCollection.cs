@@ -14,6 +14,7 @@ public static class SceneCollection
     {
         { global::CaptchaScenes.ShapeGen, 1 },
         { global::CaptchaScenes.SelectImage, 2 },
-        { global::CaptchaScenes.Cleanup, 3 }
+        { global::CaptchaScenes.Cleanup, 3 },
+        { global::CaptchaScenes.Quizzes, 4 }
     };
 }

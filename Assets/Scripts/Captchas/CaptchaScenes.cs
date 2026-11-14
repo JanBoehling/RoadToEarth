@@ -2,5 +2,6 @@
 {
     ShapeGen,
     SelectImage,
-    Cleanup
+    Cleanup,
+    Quizzes
 }
