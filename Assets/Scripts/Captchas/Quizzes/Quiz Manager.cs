@@ -23,4 +23,11 @@ public class QuizManager : MonoBehaviour
     {
         
     }
+
+    public void changeSzene()
+    {
+        //Punkte auszählen + merken
+        //Szenenwechsel
+        Debug.Log("Here comes the next Captcha");
+    }
 }
