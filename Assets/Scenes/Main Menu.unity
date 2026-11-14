@@ -490,7 +490,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1188720104}
   - {fileID: 1589046168}
@@ -1041,8 +1041,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1566,7 +1566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.24963, y: -275}
+  m_AnchoredPosition: {x: 959.2497, y: -275}
   m_SizeDelta: {x: 1900, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188720105
@@ -1589,12 +1589,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nThis Game was made by  \n\nGray Castaneda, Marija Najdoska, Rain Becker,
-    Alex Spernau, Maren Rautmann, Jan Boehling und Daniel\n\nat the Franken Game
+  m_text: "\nThis Game was made by  \nGray Castaneda, Marija Najdoska, Rain Becker,
+    Alex Spernau, Maren Rautmann, Jan B\xF6hling und Daniel\nat the Franken Game
     Jam 2026 in Nuermberg"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c610c61bbd68e4a1183add8d2c201128, type: 2}
-  m_sharedMaterial: {fileID: 3150590057918400459, guid: c610c61bbd68e4a1183add8d2c201128, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6c2c1d5d04da4680b5c1f4d5e43d2bd, type: 2}
+  m_sharedMaterial: {fileID: -2239701749314555698, guid: a6c2c1d5d04da4680b5c1f4d5e43d2bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1730,8 +1730,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Start '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 70aa596ef32b94cfab5a928131d393e3, type: 2}
-  m_sharedMaterial: {fileID: 6177991782148783169, guid: 70aa596ef32b94cfab5a928131d393e3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6c2c1d5d04da4680b5c1f4d5e43d2bd, type: 2}
+  m_sharedMaterial: {fileID: -2239701749314555698, guid: a6c2c1d5d04da4680b5c1f4d5e43d2bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1755,8 +1755,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1917,7 +1917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 959.24963, y: -761.4}
+  m_AnchoredPosition: {x: 959.2497, y: -761.4}
   m_SizeDelta: {x: 1880, y: 940}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589046169
@@ -1992,7 +1992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -57.2}
+  m_AnchoredPosition: {x: 0, y: -57.19995}
   m_SizeDelta: {x: 456.96, y: 112}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1708279738

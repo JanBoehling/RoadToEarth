@@ -39,6 +39,11 @@ public class ShapesCatcha : MonoBehaviour
 
     private void OnConfirmPressed()
     {
-        // TODO
+        if (!gameInstance.IsDone()) return;
+        
+        var success = gameInstance.IsCorrect();
+        GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
+
+        FindAnyObjectByType<CaptchaController>().LoadNextCaptcha();
     }
 }
