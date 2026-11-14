@@ -621,7 +621,7 @@ MonoBehaviour:
   _captchaPrefabs:
   - {fileID: 344123059165157657, guid: f948d7bbaf0fe0849af3d8dc462e75e9, type: 3}
   - {fileID: 9156508043074005148, guid: abd269898ce84b9d3b4b636fb2bbee6f, type: 3}
-  - {fileID: 344123059165157657, guid: f948d7bbaf0fe0849af3d8dc462e75e9, type: 3}
+  - {fileID: 8575600172984661566, guid: bddf314c842e346469a70dd17b226935, type: 3}
   _captchaContainer: {fileID: 1925425510}
 --- !u!4 &1828275802
 Transform:
