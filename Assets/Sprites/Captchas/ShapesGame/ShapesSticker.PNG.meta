@@ -1,0 +1,353 @@
+fileFormatVersion: 2
+guid: ea4ab9e49040e4dc8b809966de2f10c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2271750739453505588
+    second: ShapesSticker_0
+  - first:
+      213: 6809499235248040610
+    second: ShapesSticker_1
+  - first:
+      213: 4433104914109129513
+    second: ShapesSticker_2
+  - first:
+      213: -7917530880675948429
+    second: ShapesSticker_3
+  - first:
+      213: 3635741179570022164
+    second: ShapesSticker_4
+  - first:
+      213: -5782416190134000731
+    second: ShapesSticker_5
+  - first:
+      213: 2514502701599612675
+    second: ShapesSticker_6
+  - first:
+      213: -1262626739635594980
+    second: ShapesSticker_7
+  - first:
+      213: 4076012229908447687
+    second: ShapesSticker_8
+  - first:
+      213: 1147493771426676392
+    second: ShapesSticker_9
+  - first:
+      213: -969181608676871643
+    second: ShapesSticker_10
+  - first:
+      213: -1723585172315312068
+    second: ShapesSticker_11
+  - first:
+      213: 8835904785402949361
+    second: ShapesSticker_12
+  - first:
+      213: -1822972799052747916
+    second: ShapesSticker_13
+  - first:
+      213: -1566200575183216718
+    second: ShapesSticker_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShapesSticker_circleFill
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 789
+        width: 201
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4307b53e241e68f10800000000000000
+      internalID: 2271750739453505588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_circleEmpty
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 809
+        width: 170
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aae047e973308e50800000000000000
+      internalID: 6809499235248040610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_starFill
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 536
+        width: 213
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92363898e6d858d30800000000000000
+      internalID: 4433104914109129513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_starEmpty
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 559
+        width: 194
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378df17ec974f1290800000000000000
+      internalID: -7917530880675948429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_triangleFill
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 366
+        width: 173
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30fda9b72ee45e220800000000000000
+      internalID: 2514502701599612675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_triangleEmpty
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 377
+        width: 158
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1feed1376907f9a70800000000000000
+      internalID: 8835904785402949361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_rectangleFill
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 84
+        width: 229
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47be245d5ef73b6e0800000000000000
+      internalID: -1822972799052747916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShapesSticker_rectangleEmpty
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 121
+        width: 160
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf113dffdcb34ae0800000000000000
+      internalID: -1566200575183216718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1b04e3076f841485eb71e5c2c2970eaf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ShapesSticker_10: -969181608676871643
+      ShapesSticker_11: -1723585172315312068
+      ShapesSticker_4: 3635741179570022164
+      ShapesSticker_5: -5782416190134000731
+      ShapesSticker_7: -1262626739635594980
+      ShapesSticker_8: 4076012229908447687
+      ShapesSticker_9: 1147493771426676392
+      ShapesSticker_circleEmpty: 6809499235248040610
+      ShapesSticker_circleFill: 2271750739453505588
+      ShapesSticker_rectangleEmpty: -1566200575183216718
+      ShapesSticker_rectangleFill: -1822972799052747916
+      ShapesSticker_starEmpty: -7917530880675948429
+      ShapesSticker_starFill: 4433104914109129513
+      ShapesSticker_triangleEmpty: 8835904785402949361
+      ShapesSticker_triangleFill: 2514502701599612675
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
