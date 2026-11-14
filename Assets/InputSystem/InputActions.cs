@@ -101,6 +101,16 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""interactions"": ""Press(behavior=1)"",
                     ""initialStateCheck"": false,
                     ""priority"": 0
+                },
+                {
+                    ""name"": ""SkipCutscene"",
+                    ""type"": ""Button"",
+                    ""id"": ""5924e862-346d-49a7-8113-4b8cf0cac525"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false,
+                    ""priority"": 0
                 }
             ],
             ""bindings"": [
@@ -125,6 +135,17 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""action"": ""AnyKey"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1e929ebe-b179-4b37-827d-2a37339ef933"",
+                    ""path"": ""<Keyboard>/anyKey"",
+                    ""interactions"": ""Hold(duration=3)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SkipCutscene"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -134,6 +155,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         // Default
         m_Default = asset.FindActionMap("Default", throwIfNotFound: true);
         m_Default_AnyKey = m_Default.FindAction("AnyKey", throwIfNotFound: true);
+        m_Default_SkipCutscene = m_Default.FindAction("SkipCutscene", throwIfNotFound: true);
     }
 
     ~@InputActions()
@@ -215,6 +237,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Default;
     private List<IDefaultActions> m_DefaultActionsCallbackInterfaces = new List<IDefaultActions>();
     private readonly InputAction m_Default_AnyKey;
+    private readonly InputAction m_Default_SkipCutscene;
     /// <summary>
     /// Provides access to input actions defined in input action map "Default".
     /// </summary>
@@ -230,6 +253,10 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Default/AnyKey".
         /// </summary>
         public InputAction @AnyKey => m_Wrapper.m_Default_AnyKey;
+        /// <summary>
+        /// Provides access to the underlying input action "Default/SkipCutscene".
+        /// </summary>
+        public InputAction @SkipCutscene => m_Wrapper.m_Default_SkipCutscene;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -259,6 +286,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @AnyKey.started += instance.OnAnyKey;
             @AnyKey.performed += instance.OnAnyKey;
             @AnyKey.canceled += instance.OnAnyKey;
+            @SkipCutscene.started += instance.OnSkipCutscene;
+            @SkipCutscene.performed += instance.OnSkipCutscene;
+            @SkipCutscene.canceled += instance.OnSkipCutscene;
         }
 
         /// <summary>
@@ -273,6 +303,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @AnyKey.started -= instance.OnAnyKey;
             @AnyKey.performed -= instance.OnAnyKey;
             @AnyKey.canceled -= instance.OnAnyKey;
+            @SkipCutscene.started -= instance.OnSkipCutscene;
+            @SkipCutscene.performed -= instance.OnSkipCutscene;
+            @SkipCutscene.canceled -= instance.OnSkipCutscene;
         }
 
         /// <summary>
@@ -320,5 +353,12 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnAnyKey(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SkipCutscene" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSkipCutscene(InputAction.CallbackContext context);
     }
 }

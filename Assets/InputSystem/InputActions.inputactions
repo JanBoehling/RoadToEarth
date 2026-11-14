@@ -15,6 +15,16 @@
                     "interactions": "Press(behavior=1)",
                     "initialStateCheck": false,
                     "priority": 0
+                },
+                {
+                    "name": "SkipCutscene",
+                    "type": "Button",
+                    "id": "5924e862-346d-49a7-8113-4b8cf0cac525",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
                 }
             ],
             "bindings": [
@@ -37,6 +47,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "AnyKey",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e929ebe-b179-4b37-827d-2a37339ef933",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "Hold(duration=3)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SkipCutscene",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

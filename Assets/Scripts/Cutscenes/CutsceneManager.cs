@@ -1,11 +1,16 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class CutsceneManager : MonoBehaviour
 {
     [SerializeField] private bool _autoPlay = true;
 
     private Animator _animator;
+
+    // Skip settings
+    private const float SkipButtonHoldTime = 3f;
+    private float _timer = 0f;
 
     private void Awake()
     {
@@ -17,6 +22,17 @@ public class CutsceneManager : MonoBehaviour
     private void Start()
     {
         if (_autoPlay) StartCoroutine(AutoPlayAfterAnimCO());
+    }
+
+    private void Update()
+    {
+        // Skip cutscene
+        if (GameManager.Instance.Input.Default.SkipCutscene.IsPressed())
+        {
+            _timer += Time.deltaTime;
+            if (_timer > SkipButtonHoldTime) LoadNextScene();
+        }
+        else _timer = 0f;
     }
 
     private IEnumerator AutoPlayAfterAnimCO()
