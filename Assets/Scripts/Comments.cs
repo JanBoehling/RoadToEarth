@@ -54,5 +54,7 @@
         _ => GetComment(GetRandomIndex(_neutralComments.Length), Neutrality.Neutral),
     };
 
+    public static string GetRandomInactivityComment() => _inactiveComments[GetRandomIndex(_inactiveComments.Length)];
+
     private static int GetRandomIndex(int length) => UnityEngine.Random.Range(0, length);
 }

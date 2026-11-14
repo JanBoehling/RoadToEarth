@@ -8,6 +8,8 @@ using UnityEditor;
 
 public class GameManager : MonoSingleton<GameManager>
 {
+    public InputActions Input { get; private set; }
+
     // if the eval is negative, the "bad" ending is triggered
     private int _evaluation;
     public int Evaluation
@@ -23,6 +25,19 @@ public class GameManager : MonoSingleton<GameManager>
     public Comments.Neutrality CurrentNeutrality { get; private set; } = Comments.Neutrality.Neutral;
 
     private int _currentCaptchaIndex = 0;
+
+    protected override void Awake()
+    {
+        base.Awake();
+
+        Input = new();
+        Input.Default.Enable();
+    }
+
+    private void OnDestroy()
+    {
+        Input.Default.Disable();
+    }
 
     /// <summary>
     /// Adds given value to evaluation value
