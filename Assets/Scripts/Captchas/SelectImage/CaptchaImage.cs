@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-#if UNITY_EDITOR
-public struct CaptchaImage
+[System.Serializable]
+public class CaptchaImage
 {
-    public UnityEngine.UI.Image ImageComponent;
-    public Sprite Img;
-    public bool IsCorrect;
+    [SerializeField] public UnityEngine.UI.Image ImageComponent;
+    [SerializeField] public Sprite Img;
+    [SerializeField] public bool IsCorrect;
 }
-#endif

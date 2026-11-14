@@ -2014,6 +2014,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4f094a590fa241b83833a61f7072a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectImageCaptcha
+  CaptchaImages:
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 3158884462031704537, guid: 0c7f532afe2b643af8b53dd8ad2817b0, type: 3}
+    IsCorrect: 1
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 9126577831000741705, guid: 86ef9b52ebc6d5b439e48724e31f916e, type: 3}
+    IsCorrect: 0
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 1
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 1
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 1
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 0
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 0
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 1
+  - ImageComponent: {fileID: 0}
+    Img: {fileID: 0}
+    IsCorrect: 0
   _buttons:
   - {fileID: 1856552832}
   - {fileID: 582464397}

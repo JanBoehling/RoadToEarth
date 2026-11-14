@@ -5,12 +5,12 @@ using System.Linq;
 [CustomEditor(typeof(SelectImageCaptcha))]
 public class SelectImageCaptchaEditor : Editor
 {
-#if false
+#if true
     private SelectImageCaptcha _target;
 
     private GUISkin _skin;
 
-    (int width, int height) _captchaImageAmount;
+    private const int RowCount = 3;
 
     private enum CurrentContext
     {
@@ -23,7 +23,6 @@ public class SelectImageCaptchaEditor : Editor
     {
         _target = (SelectImageCaptcha)target;
         _skin = CreateInstance<GUISkin>();
-        _captchaImageAmount = (_target.CaptchaImages.GetLength(0), _target.CaptchaImages.GetLength(1));
         _contextItems = new()
         {
             { CurrentContext.Sprite, EditorGUIUtility.IconContent("Packages/com.unity.render-pipelines.core/Editor/LookDev/Icons/d_Environment@2x.png") },
@@ -36,20 +35,25 @@ public class SelectImageCaptchaEditor : Editor
     {
         serializedObject.Update();
         DrawPropertiesExcluding(serializedObject, "m_Script");
+
+        if (_target.CaptchaImages == null || _target.CaptchaImages.Count < RowCount * RowCount)
+        {
+            for (int i = 0; i < RowCount * RowCount; i++) _target.CaptchaImages.Add(new());
+        }
         
         switch (_currentContext)
         {
             case CurrentContext.Sprite:
-                DrawSpriteContext(_captchaImageAmount.width, _captchaImageAmount.height);
+                DrawSpriteContext();
                 break;
             case CurrentContext.Config:
-                DrawConfigContext(_captchaImageAmount.width, _captchaImageAmount.height);
+                DrawConfigContext();
                 break;
             case CurrentContext.Ref:
-                DrawRefContext(_captchaImageAmount.width, _captchaImageAmount.height);
+                DrawRefContext();
                 break;
             default:
-                DrawSpriteContext(_captchaImageAmount.width, _captchaImageAmount.height);
+                DrawSpriteContext();
                 break;
         }
 
@@ -67,24 +71,24 @@ public class SelectImageCaptchaEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 
-    private void DrawGrid(int width, int height, System.Action<int, int> editorGUILayoutField)
+    private void DrawGrid(System.Action<int> editorGUILayoutField)
     {
-        for (int x = 0; x < width; x++)
+        for (int x = 0; x < RowCount; x++)
         {
             EditorGUILayout.BeginHorizontal();
-            for (int y = 0; y < height; y++)
+            for (int y = 0; y < RowCount; y++)
             {
-                editorGUILayoutField?.Invoke(x, y);
+                editorGUILayoutField?.Invoke(y + RowCount * x);
             }
             EditorGUILayout.EndHorizontal();
         }
     }
 
-    private void DrawSpriteContext(int width, int height) => DrawGrid(width, height, (i, j) => _target.CaptchaImages[i, j].Img = EditorGUILayout.ObjectField(_target.CaptchaImages[i, j].Img, typeof(Sprite), false, SetWidthHeight()) as Sprite);
+    private void DrawSpriteContext() => DrawGrid((i) => _target.CaptchaImages[i].Img = EditorGUILayout.ObjectField(_target.CaptchaImages[i].Img, typeof(Sprite), false, SetWidthHeight()) as Sprite);
 
-    private void DrawConfigContext(int width, int height) => DrawGrid(width, height, (i, j) => _target.CaptchaImages[i, j].IsCorrect = GUILayout.Toggle(_target.CaptchaImages[i, j].IsCorrect, "", _skin.button, SetWidthHeight(65.2f, 65.2f))); // Random-ass magic number to match size of object fields
+    private void DrawConfigContext() => DrawGrid((i) => _target.CaptchaImages[i].IsCorrect = GUILayout.Toggle(_target.CaptchaImages[i].IsCorrect, "", _skin.button, SetWidthHeight(65.2f, 65.2f))); // Random-ass magic number to match size of object fields
 
-    private void DrawRefContext(int width, int height) => DrawGrid(width, height, (i, j) => _target.CaptchaImages[i, j].ImageComponent = EditorGUILayout.ObjectField(_target.CaptchaImages[i, j].ImageComponent, typeof(UnityEngine.UI.Image), true, SetWidthHeight()) as UnityEngine.UI.Image);
+    private void DrawRefContext() => DrawGrid((i) => _target.CaptchaImages[i].ImageComponent = EditorGUILayout.ObjectField(_target.CaptchaImages[i].ImageComponent, typeof(UnityEngine.UI.Image), true, SetWidthHeight()) as UnityEngine.UI.Image);
 
     private GUILayoutOption[] SetWidthHeight(float width = 64, float height = 64) => new GUILayoutOption[] { GUILayout.Width(width), GUILayout.Height(height) };
     private GUILayoutOption SetWidth(float width = 64) => GUILayout.Width(width);
