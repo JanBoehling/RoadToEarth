@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
 
         if (_localClip) _audioSource.clip = _localClip;
         _audioSource.playOnAwake = _playOnAwake;
+        _audioSource.loop = _isLooping;
 
         if (_isPersistent) DontDestroyOnLoad(gameObject);
     }
