@@ -46,6 +46,8 @@ public class SelectImageCaptcha : Captcha
     {
         bool success = Check();
         GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
+
+        FindAnyObjectByType<CaptchaController>().LoadNextCaptcha();
     }
 
     public void Refresh()
