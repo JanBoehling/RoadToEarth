@@ -5,6 +5,15 @@ public class InactivityMonitor : MonoSingleton<InactivityMonitor>
     private const float InactivityThreshold = 60f;
     private float _timer = 0f;
 
+    [SerializeField] private AudioClip[] _inactivityVoicelines;
+    private AudioManager _voicelineAudioManager;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        _voicelineAudioManager = GetComponentInChildren<AudioManager>();
+    }
+
     private void Update()
     {
         _timer += Time.deltaTime;
@@ -20,6 +29,7 @@ public class InactivityMonitor : MonoSingleton<InactivityMonitor>
     private void DisplayInactivityMessage(string msg)
     {
         Debug.Log(msg);
+        if (_inactivityVoicelines.Length > 0) _voicelineAudioManager.Play(_inactivityVoicelines[Random.Range(0, _inactivityVoicelines.Length)]);
     }
 
     public bool CheckForInactivity() => _timer > InactivityThreshold;
