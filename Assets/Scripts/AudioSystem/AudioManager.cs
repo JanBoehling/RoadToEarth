@@ -14,8 +14,8 @@ public class AudioManager : MonoBehaviour
     {
         _audioSource = gameObject.AddComponent<AudioSource>();
 
-        if (_localClip) _audioSource.clip = _localClip;
         _audioSource.playOnAwake = _playOnAwake;
+        if (_localClip) _audioSource.clip = _localClip;
         _audioSource.loop = _isLooping;
 
         if (_isPersistent) DontDestroyOnLoad(gameObject);
@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayLocalClip();
+        
     }
 
     public void PlayLocalClip() => _audioSource.Play();
