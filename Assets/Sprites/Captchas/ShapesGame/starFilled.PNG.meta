@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 66b82ad7835f24496bffdb4555694b62
+guid: b9b946b5188ee4922bd5a91d6efcdd01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2720646495535468324
-    second: starFill_0
+      213: -8506812384264320995
+    second: starFilled_0
+  - first:
+      213: -1202096848997451918
+    second: starFilled_1
+  - first:
+      213: 3747961925860238590
+    second: starFilled_2
+  - first:
+      213: -8303000577190834098
+    second: starFilled_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: starFill_0
+      name: starFilled_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 748
+        y: 1084
+        width: 390
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd0723a4d625e3ad0800000000000000
-      internalID: -2720646495535468324
+      spriteID: d180801253bb1f980800000000000000
+      internalID: -8506812384264320995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starFilled_1
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1070
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277f3e9e84b415fe0800000000000000
+      internalID: -1202096848997451918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starFilled_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1092
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4a696938f630430800000000000000
+      internalID: 3747961925860238590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starFilled_3
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1099
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e405daa57f0d5cc80800000000000000
+      internalID: -8303000577190834098
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      starFill_0: -2720646495535468324
+      starFilled_0: -8506812384264320995
+      starFilled_1: -1202096848997451918
+      starFilled_2: 3747961925860238590
+      starFilled_3: -8303000577190834098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

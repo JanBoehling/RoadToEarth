@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f95cc278d17e4ac299f8d1feb21866b
+guid: 0fcc361db54c54c09bfed2c74cacf5e0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -405111759842901799
-    second: triangleFill_0
+      213: -3326704012212865633
+    second: IMG_3067_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: triangleFill_0
+      name: IMG_3067_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 786
+        y: 240
+        width: 324
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d00b343001c06af0800000000000000
-      internalID: -405111759842901799
+      spriteID: f957f27935c25d1d0800000000000000
+      internalID: -3326704012212865633
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      triangleFill_0: -405111759842901799
+      IMG_3067_0: -3326704012212865633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
