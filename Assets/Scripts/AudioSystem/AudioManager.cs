@@ -1,17 +1,46 @@
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
-public class AudioManager : MonoSingleton<AudioManager>
+public class AudioManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private bool _isPersistent = false;
+    [SerializeField] private bool _playOnAwake = false;
+    [SerializeField] private bool _isLooping = false;
+
+    [SerializeField, Tooltip("Optional: local audio clip")] private AudioClip _localClip;
+
+    private AudioSource _audioSource;
+
+    private void Awake()
     {
-        
+        _audioSource = gameObject.AddComponent<AudioSource>();
+
+        if (_localClip) _audioSource.clip = _localClip;
+        _audioSource.playOnAwake = _playOnAwake;
+
+        if (_isPersistent) DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        PlayLocalClip();
     }
+
+    public void PlayLocalClip() => _audioSource.Play();
+    public void Play(AudioClip clip)
+    {
+        _audioSource.clip = clip;
+        PlayLocalClip();
+    }
+    public void PlayRandomFromSet(AudioSet audioSet)
+    {
+        Play(audioSet.Set[Random.Range(0, audioSet.Length)]);
+    }
+}
+
+[CreateAssetMenu(fileName = "New Audio Set", menuName = "Audio System/Audio Set")]
+public class AudioSet : ScriptableObject
+{
+    public AudioClip[] Set;
+
+    public int Length => Set.Length;
 }
