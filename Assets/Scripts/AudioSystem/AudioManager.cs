@@ -21,11 +21,6 @@ public class AudioManager : MonoBehaviour
         if (_isPersistent) DontDestroyOnLoad(gameObject);
     }
 
-    private void Start()
-    {
-        
-    }
-
     public void PlayLocalClip() => _audioSource.Play();
     public void Play(AudioClip clip)
     {

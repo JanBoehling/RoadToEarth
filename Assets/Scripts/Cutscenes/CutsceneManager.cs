@@ -37,7 +37,10 @@ public class CutsceneManager : MonoBehaviour
 
     private IEnumerator AutoPlayAfterAnimCO()
     {
+        var audioManager = FindFirstObjectByType<AudioManager>();
+        if (audioManager) audioManager.Pause();
         yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
+        if (audioManager) audioManager.Resume();
         LoadNextScene();
     }
 
