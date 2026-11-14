@@ -13,9 +13,22 @@ public class ShapesGame : MonoBehaviour
     [SerializeField] private ShapesDropZone squareHole;
     [SerializeField] private Button resetButton;
     [SerializeField] private Button confirmButton;
-
-
+    
     private readonly ShapesGameResult _result = new();
+    
+    public bool IsDone()
+    {
+        foreach (var shape in shapes)
+        {
+            if (!shape.IsDropped) return false;
+        }
+        return true;
+    }
+
+    public bool IsCorrect()
+    {
+        return _result.Correct >= 4;
+    }
     
     private void Awake()
     {
