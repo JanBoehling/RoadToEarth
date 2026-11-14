@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InactivityMonitor : MonoBehaviour
+public class InactivityMonitor : MonoSingleton<InactivityMonitor>
 {
     private const float InactivityThreshold = 60f;
     private float _timer = 0f;
