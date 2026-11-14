@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 0fcc361db54c54c09bfed2c74cacf5e0
+guid: 5417c81eed750409e866fdcc23adaba0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3326704012212865633
-    second: IMG_3067_0
+      213: -4430734411030573459
+    second: IMG_3082_0
+  - first:
+      213: -7797506759998851089
+    second: IMG_3082_1
+  - first:
+      213: -5366211178014905351
+    second: IMG_3082_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +52,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_3067_0
+      name: IMG_3082_0
       rect:
         serializedVersion: 2
-        x: 786
-        y: 240
-        width: 324
-        height: 299
+        x: 11
+        y: 787
+        width: 425
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f957f27935c25d1d0800000000000000
-      internalID: -3326704012212865633
+      spriteID: d6e4c68378ed282c0800000000000000
+      internalID: -4430734411030573459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3082_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 464
+        width: 338
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7bf8c2ae0b9c390800000000000000
+      internalID: -7797506759998851089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3082_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 61
+        width: 530
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbe0b07d536785b0800000000000000
+      internalID: -5366211178014905351
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_3067_0: -3326704012212865633
+      IMG_3082_0: -4430734411030573459
+      IMG_3082_1: -7797506759998851089
+      IMG_3082_2: -5366211178014905351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

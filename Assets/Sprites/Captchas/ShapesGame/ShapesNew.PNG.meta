@@ -1,25 +1,52 @@
 fileFormatVersion: 2
-guid: 825c09d1722c746fd8653df66e3a904a
+guid: 7621e936763dd4d6f92a8294cd50d3bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3156440739924269430
-    second: triangleEmpty_0
+      213: 4974491843089876046
+    second: IMG_3080_0
   - first:
-      213: 6440844350900804939
-    second: triangleEmpty_1
+      213: 2385569389437797483
+    second: IMG_3080_1
   - first:
-      213: -7062015171391431331
-    second: triangleEmpty_2
+      213: -3984192397971465420
+    second: IMG_3080_2
   - first:
-      213: -5561551715204316154
-    second: triangleEmpty_3
+      213: -1982395753463998004
+    second: IMG_3080_3
   - first:
-      213: -4963772066169847586
-    second: triangleEmpty_4
+      213: -6272662927822331011
+    second: IMG_3080_4
   - first:
-      213: -2251720356743228467
-    second: triangleEmpty_5
+      213: -3758427764484290226
+    second: IMG_3080_5
+  - first:
+      213: 2385957551422452418
+    second: IMG_3080_6
+  - first:
+      213: 6807152478809253864
+    second: IMG_3080_7
+  - first:
+      213: 3874173541169150211
+    second: IMG_3080_8
+  - first:
+      213: -6720903987333424730
+    second: IMG_3080_9
+  - first:
+      213: 4382350561420669907
+    second: IMG_3080_10
+  - first:
+      213: -1538817427800918509
+    second: IMG_3080_11
+  - first:
+      213: 3710251447358033082
+    second: IMG_3080_12
+  - first:
+      213: -838484584523913600
+    second: IMG_3080_13
+  - first:
+      213: 1099125158465783690
+    second: IMG_3080_14
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +88,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: triangleEmpty_0
+      name: circleFill
       rect:
         serializedVersion: 2
-        x: 2126
-        y: 750
-        width: 314
-        height: 242
+        x: 355
+        y: 789
+        width: 201
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a862e3eded11234d0800000000000000
-      internalID: -3156440739924269430
+      spriteID: e44437da9f1f80540800000000000000
+      internalID: 4974491843089876046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: triangleEmpty_1
+      name: circleEmpty
       rect:
         serializedVersion: 2
-        x: 2320
-        y: 1028
-        width: 41
-        height: 9
+        x: 1043
+        y: 809
+        width: 170
+        height: 165
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4d1605efc9726950800000000000000
-      internalID: 6440844350900804939
+      spriteID: b644c7c68be3b1120800000000000000
+      internalID: 2385569389437797483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: triangleEmpty_2
+      name: starFill
       rect:
         serializedVersion: 2
-        x: 2375
-        y: 1023
-        width: 8
-        height: 11
+        x: 362
+        y: 534
+        width: 213
+        height: 229
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5d5bc62e9eaefd90800000000000000
-      internalID: -7062015171391431331
+      spriteID: 43b591a8f1e45b8c0800000000000000
+      internalID: -3984192397971465420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: triangleEmpty_3
+      name: starEmpty
       rect:
         serializedVersion: 2
-        x: 2317
-        y: 1021
-        width: 8
-        height: 6
+        x: 1043
+        y: 559
+        width: 194
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 604484f6e2661d2b0800000000000000
-      internalID: -5561551715204316154
+      spriteID: cc9198eb09d1d74e0800000000000000
+      internalID: -1982395753463998004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: triangleEmpty_4
+      name: triangleFill
       rect:
         serializedVersion: 2
-        x: 2327
-        y: 1018
-        width: 23
-        height: 9
+        x: 385
+        y: 366
+        width: 173
+        height: 150
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed080f1ea932d1bb0800000000000000
-      internalID: -4963772066169847586
+      spriteID: 2c232bd60cf9c1120800000000000000
+      internalID: 2385957551422452418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: triangleEmpty_5
+      name: triangleEmpty
       rect:
         serializedVersion: 2
-        x: 2125
-        y: 751
-        width: 314
-        height: 243
+        x: 1062
+        y: 375
+        width: 158
+        height: 123
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +267,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc3ddc2044840c0e0800000000000000
-      internalID: -2251720356743228467
+      spriteID: abc872b98067d7330800000000000000
+      internalID: 3710251447358033082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rectangleFil
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 97
+        width: 207
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086afcd76ba1d54f0800000000000000
+      internalID: -838484584523913600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rectangleEmpty
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 121
+        width: 160
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a874c0a1280e04f00800000000000000
+      internalID: 1099125158465783690
       vertices: []
       indices: 
       edges: []
@@ -250,7 +321,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cc8a7b4ad8165487fa3f4661f2549537
+    spriteID: 386ddd81891a44be79da4aab795e5150
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +331,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      triangleEmpty_0: -3156440739924269430
-      triangleEmpty_1: 6440844350900804939
-      triangleEmpty_2: -7062015171391431331
-      triangleEmpty_3: -5561551715204316154
-      triangleEmpty_4: -4963772066169847586
-      triangleEmpty_5: -2251720356743228467
+      IMG_3080_10: 4382350561420669907
+      IMG_3080_11: -1538817427800918509
+      IMG_3080_4: -6272662927822331011
+      IMG_3080_5: -3758427764484290226
+      IMG_3080_7: 6807152478809253864
+      IMG_3080_8: 3874173541169150211
+      IMG_3080_9: -6720903987333424730
+      circleEmpty: 2385569389437797483
+      circleFill: 4974491843089876046
+      rectangleEmpty: 1099125158465783690
+      rectangleFil: -838484584523913600
+      starEmpty: -1982395753463998004
+      starFill: -3984192397971465420
+      triangleEmpty: 3710251447358033082
+      triangleFill: 2385957551422452418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
