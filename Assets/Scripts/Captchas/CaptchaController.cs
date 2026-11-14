@@ -15,7 +15,7 @@ public class CaptchaController : MonoBehaviour
     /// </summary>
     public void LoadNextCaptcha()
     {
-        if (_currentCaptchaIndex >= _captchaPrefabs.Length) GameManager.Instance.LoadNextScene();
+        if (_currentCaptchaIndex >= _captchaPrefabs.Length) GameManager.Instance.EvaluateEnding();
 
         DestroyChild();
         InstantiateCaptchaPrefab();

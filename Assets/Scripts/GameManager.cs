@@ -58,20 +58,6 @@ public class GameManager : MonoSingleton<GameManager>
         LoadScene(SceneCollection.EndingScenes[CurrentNeutrality]);
     }
 
-    /// <summary>
-    /// Unloads the current showing captcha and loads the next one in the list
-    /// </summary>
-    public void AdvanceCaptcha()
-    {
-        if (++_currentCaptchaIndex >= SceneCollection.CaptchaScenes.Count)
-        {
-            EvaluateEnding();
-            return;
-        }
-
-        LoadScene(SceneCollection.CaptchaScenes.ElementAt(_currentCaptchaIndex).Value);
-    }
-
     public void Quit() => Application.Quit();
 
     public void LoadScene(int buildIndex, bool additive = false)
