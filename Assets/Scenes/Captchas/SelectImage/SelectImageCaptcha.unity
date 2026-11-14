@@ -2016,22 +2016,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SelectImageCaptcha
   CaptchaImages:
   - ButtonObject: {fileID: 1856552832}
-    Img: {fileID: 3158884462031704537, guid: 0c7f532afe2b643af8b53dd8ad2817b0, type: 3}
+    Img: {fileID: 5332564203587657146, guid: 7b54c572df8118b4a90925b6ee595d6b, type: 3}
     IsCorrect: 1
   - ButtonObject: {fileID: 429201053}
     Img: {fileID: 9126577831000741705, guid: 86ef9b52ebc6d5b439e48724e31f916e, type: 3}
     IsCorrect: 0
   - ButtonObject: {fileID: 1432261070}
-    Img: {fileID: -8506812384264320995, guid: b9b946b5188ee4922bd5a91d6efcdd01, type: 3}
+    Img: {fileID: 2271750739453505588, guid: ea4ab9e49040e4dc8b809966de2f10c7, type: 3}
     IsCorrect: 1
   - ButtonObject: {fileID: 582464397}
     Img: {fileID: 3765111319526120282, guid: 94cce456c875a493b805905e40f1f6ed, type: 3}
     IsCorrect: 1
   - ButtonObject: {fileID: 1201250804}
-    Img: {fileID: -3326704012212865633, guid: 0fcc361db54c54c09bfed2c74cacf5e0, type: 3}
+    Img: {fileID: 2514502701599612675, guid: ea4ab9e49040e4dc8b809966de2f10c7, type: 3}
     IsCorrect: 1
   - ButtonObject: {fileID: 276415849}
-    Img: {fileID: 8645299075525441375, guid: 2eb30478b64314997b34cf51c1935a6e, type: 3}
+    Img: {fileID: -1822972799052747916, guid: ea4ab9e49040e4dc8b809966de2f10c7, type: 3}
     IsCorrect: 0
   - ButtonObject: {fileID: 954475670}
     Img: {fileID: -9035727143155705755, guid: 3184ab06a4c166842ac9d19b8ec5e160, type: 3}
@@ -2040,7 +2040,7 @@ MonoBehaviour:
     Img: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     IsCorrect: 1
   - ButtonObject: {fileID: 1409691585}
-    Img: {fileID: -1202096848997451918, guid: b9b946b5188ee4922bd5a91d6efcdd01, type: 3}
+    Img: {fileID: 4433104914109129513, guid: ea4ab9e49040e4dc8b809966de2f10c7, type: 3}
     IsCorrect: 0
 --- !u!4 &1836834080
 Transform:
