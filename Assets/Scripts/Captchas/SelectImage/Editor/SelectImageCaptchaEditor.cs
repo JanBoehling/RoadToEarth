@@ -5,7 +5,6 @@ using System.Linq;
 [CustomEditor(typeof(SelectImageCaptcha))]
 public class SelectImageCaptchaEditor : Editor
 {
-#if true
     private SelectImageCaptcha _target;
 
     private GUISkin _skin;
@@ -94,5 +93,4 @@ public class SelectImageCaptchaEditor : Editor
     private GUILayoutOption[] SetWidthHeight(float width = 64, float height = 64) => new GUILayoutOption[] { GUILayout.Width(width), GUILayout.Height(height) };
     private GUILayoutOption SetWidth(float width = 64) => GUILayout.Width(width);
     private GUILayoutOption SetHeight(float height = 64) => GUILayout.Height(height);
-#endif
 }

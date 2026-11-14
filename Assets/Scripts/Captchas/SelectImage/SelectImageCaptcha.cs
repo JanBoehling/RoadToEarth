@@ -4,10 +4,7 @@ using System.Collections.Generic;
 
 public class SelectImageCaptcha : Captcha
 {
-#if true
-    // This should be a scriptable object to work, i think
     [SerializeField, HideInInspector] public List<CaptchaImage> CaptchaImages;
-#endif
 
     private void Start()
     {
@@ -37,8 +34,15 @@ public class SelectImageCaptcha : Captcha
         return failCount > FailThreshold;
     }
 
+    public void EvaluateSelectImageCaptcha()
+    {
+        bool success = Check();
+        GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
+    }
+
     public static int GetIndex1D(int x, int y, int rowCount) => y + rowCount * x;
 
+    // DEBUG STUFF
     public void DoCheck() => Check();
 
     public void ResetScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
