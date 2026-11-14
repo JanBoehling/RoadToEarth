@@ -5,6 +5,7 @@ public class SimpleShrinkUI : MonoBehaviour
 {
     public float shrinkSpeed = 3f;
     private bool _shrinking = false;
+    private bool hasAudioPlayed = false;
     
     public void Shrink()
     {
@@ -18,6 +19,15 @@ public class SimpleShrinkUI : MonoBehaviour
         if (transform.localScale == Vector3.zero)
         {
             gameObject.SetActive(false);
+        }
+        if(!hasAudioPlayed)
+        {
+            var audioManager = GetComponentInParent<AudioManager>();
+            if(audioManager)
+            {
+                audioManager.PlayLocalClip();
+            }
+            hasAudioPlayed = true;
         }
     }
 }

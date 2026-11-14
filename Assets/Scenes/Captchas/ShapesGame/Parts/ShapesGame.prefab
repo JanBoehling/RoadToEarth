@@ -2125,18 +2125,18 @@ PrefabInstance:
     - target: {fileID: 7661456796186758462, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8402776292706714828}
     - target: {fileID: 7661456796186758462, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7661456796186758462, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Refresh
+      value: PlayLocalClip
       objectReference: {fileID: 0}
     - target: {fileID: 7661456796186758462, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SelectImageCaptcha, Assembly-CSharp
+      value: AudioManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7661456796186758462, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2163,6 +2163,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1320453770629733674, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
   m_PrefabInstance: {fileID: 5652774188479312697}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8402776292706714828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4246358608726849525, guid: 1cf3f987371f24fefbe61cca82dd3a35, type: 3}
+  m_PrefabInstance: {fileID: 5652774188479312697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec032ea8f02a4c3cbb02e7bac64866b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
 --- !u!1001 &6947514148078096866
 PrefabInstance:
   m_ObjectHideFlags: 0
