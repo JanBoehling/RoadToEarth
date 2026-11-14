@@ -36,6 +36,14 @@ public class AudioManager : MonoBehaviour
     {
         Play(audioSet.Set[Random.Range(0, audioSet.Length)]);
     }
+    public void Pause()
+    {
+        if (_audioSource.clip) _audioSource.Pause();
+    }
+    public void Resume()
+    {
+        if (_audioSource.clip) _audioSource.UnPause();
+    }
 }
 
 [CreateAssetMenu(fileName = "New Audio Set", menuName = "Audio System/Audio Set")]
