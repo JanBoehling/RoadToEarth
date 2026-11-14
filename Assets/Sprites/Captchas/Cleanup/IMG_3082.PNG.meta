@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ce0b651567389450e82036cc41842a07
+guid: 5417c81eed750409e866fdcc23adaba0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1343890305401472632
-    second: "Wa\u0308schepile_0"
+      213: -4430734411030573459
+    second: IMG_3082_0
+  - first:
+      213: -7797506759998851089
+    second: IMG_3082_1
+  - first:
+      213: -5366211178014905351
+    second: IMG_3082_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,7 +54,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Wa\u0308schepile_0"
+      name: IMG_3082_0
       rect:
         serializedVersion: 2
-        x: 427
-        y: 124
-        width: 1032
-        height: 489
+        x: 11
+        y: 787
+        width: 425
+        height: 285
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 876cb8ecc1576a210800000000000000
-      internalID: 1343890305401472632
+      spriteID: d6e4c68378ed282c0800000000000000
+      internalID: -4430734411030573459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3082_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 464
+        width: 338
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7bf8c2ae0b9c390800000000000000
+      internalID: -7797506759998851089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMG_3082_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 61
+        width: 530
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fbe0b07d536785b0800000000000000
+      internalID: -5366211178014905351
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Wa\u0308schepile_0": 1343890305401472632
+      IMG_3082_0: -4430734411030573459
+      IMG_3082_1: -7797506759998851089
+      IMG_3082_2: -5366211178014905351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
