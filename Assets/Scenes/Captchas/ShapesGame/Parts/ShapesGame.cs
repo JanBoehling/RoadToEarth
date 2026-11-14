@@ -4,10 +4,16 @@ using UnityEngine.UI;
 
 public class ShapesGame : MonoBehaviour
 {
+    public event Action ResetPressed;
+    public event Action ConfirmPressed;
+    
     [Header("Children")]
     [SerializeField] private DraggableImage[] shapes;
     [SerializeField] private ShapesDropZone[] holes;
     [SerializeField] private ShapesDropZone squareHole;
+    [SerializeField] private Button resetButton;
+    [SerializeField] private Button confirmButton;
+
 
     private readonly ShapesGameResult _result = new();
     
@@ -17,6 +23,9 @@ public class ShapesGame : MonoBehaviour
         {
             hole.ShapeDropped += OnShapeDropped;
         }
+        
+        resetButton.onClick.AddListener(() => ResetPressed?.Invoke());
+        confirmButton.onClick.AddListener(() => ConfirmPressed?.Invoke());
     }
 
     private void OnShapeDropped(ShapesDropZone zone)
