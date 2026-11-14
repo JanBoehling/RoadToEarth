@@ -6,6 +6,7 @@ public class SelectImageButton : MonoBehaviour
 {
     private const float SelectedAlpha = .8f;
 
+    [field: SerializeField] public bool IsCorrect { get; private set; }
     [field: SerializeField] public bool IsSelected { get; private set; }
 
     private Image _img;
