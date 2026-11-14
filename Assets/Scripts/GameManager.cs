@@ -2,15 +2,32 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class GameManager : MonoSingleton<GameManager>
 {
     // if the eval is negative, the "bad" ending is triggered
-    public int Evaluation { get; private set; }
+    private int _evaluation;
+    public int Evaluation
+    {
+        get => _evaluation;
+        set
+        {
+            _evaluation = value;
+            CurrentNeutrality = _evaluation < 0 ? Comments.Neutrality.Negative : Comments.Neutrality.Positive;
+        }
+    }
 
-    [SerializeField] private Comments.Neutrality _currentNeutrality = Comments.Neutrality.Neutral;
+    public Comments.Neutrality CurrentNeutrality { get; private set; } = Comments.Neutrality.Neutral;
 
     private int _currentCaptchaIndex = 0;
 
+    /// <summary>
+    /// Adds given value to evaluation value
+    /// </summary>
+    /// <param name="value">-1 or +1</param>
     public void RaiseEvaluation(int value)
     {
         Evaluation += value;
@@ -23,14 +40,22 @@ public class GameManager : MonoSingleton<GameManager>
     /// </summary>
     public void EvaluateEnding()
     {
-        if (Evaluation < 0) LoadScene(SceneCollection.EndingScenes[Comments.Neutrality.Negative]);
-        else LoadScene(SceneCollection.EndingScenes[Comments.Neutrality.Positive]);
+        LoadScene(SceneCollection.EndingScenes[CurrentNeutrality]);
     }
 
     /// <summary>
     /// Unloads the current showing captcha and loads the next one in the list
     /// </summary>
-    public void AdvanceCaptcha() => LoadScene(SceneCollection.CaptchaScenes.ElementAt(++_currentCaptchaIndex).Value);
+    public void AdvanceCaptcha()
+    {
+        if (++_currentCaptchaIndex >= SceneCollection.CaptchaScenes.Count)
+        {
+            EvaluateEnding();
+            return;
+        }
+
+        LoadScene(SceneCollection.CaptchaScenes.ElementAt(_currentCaptchaIndex).Value);
+    }
 
     public void Quit() => Application.Quit();
 
@@ -43,3 +68,18 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void LoadNextScene() => LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 }
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(GameManager))]
+public class GameManagerEditor : Editor
+{
+    private GameManager _target;
+    private void OnEnable() => _target = (GameManager)target;
+    public override void OnInspectorGUI()
+    {
+        DrawPropertiesExcluding(serializedObject, "m_Script");
+        EditorGUILayout.Separator();
+        EditorGUILayout.LabelField($"Current Neutrality: {_target.CurrentNeutrality}");
+    }
+}
+#endif
