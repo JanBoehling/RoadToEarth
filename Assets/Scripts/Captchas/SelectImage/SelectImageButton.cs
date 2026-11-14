@@ -5,7 +5,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button), typeof(Image))]
 public class SelectImageButton : MonoBehaviour
 {
-    private const float SelectedAlpha = .8f;
+    private Color SelectedColor = new Color(0f, 0f, 1f, 0.5f);
+    private Color UnselectedColor = new Color(1f, 1f, 1f, 1f);
 
     [field: SerializeField] public bool IsSelected { get; private set; }
 
@@ -22,6 +23,14 @@ public class SelectImageButton : MonoBehaviour
     public void ToggleButton()
     {
         IsSelected = !IsSelected;
-        ImageComponent.color = new Color(ImageComponent.color.r, ImageComponent.color.g, ImageComponent.color.b, IsSelected ? SelectedAlpha : 1f);
+
+        if (IsSelected)
+        {
+            ImageComponent.color = SelectedColor;
+        }
+        else
+        {
+            ImageComponent.color = UnselectedColor;
+        }
     }
 }
