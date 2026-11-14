@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d88f889b876771e4395cf02e631bfd5b, type: 3}
+  m_Name: Umfrage
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionData
+  questionText: "Bitte nimm dir kurz Zeit f\xFCr eine Umfrage.  Welche Werbung hast
+    du in deiner Zeit im Himmel gesehen?"
+  answers:
+  - Game 1
+  - Game 2
+  - Game 3
+  - Game 4
+  aiCorrectAnswerIndex: 0
