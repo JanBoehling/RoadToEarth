@@ -6,18 +6,45 @@ public class SelectImageCaptcha : Captcha
 {
 #if true
     // This should be a scriptable object to work, i think
-    [SerializeField] public List<CaptchaImage> CaptchaImages;
+    [SerializeField, HideInInspector] public List<CaptchaImage> CaptchaImages;
 #endif
-
-    [SerializeField] private List<SelectImageButton> _buttons;
 
     private void Start()
     {
-        foreach (var item in CaptchaImages)
+        // Apply sprites to canvas objects
+        for (int y = 0; y < 3; y++)
         {
-            item.ImageComponent.sprite = item.Img;
+            for(int x = 0; x < 3; x++)
+            {
+                var button = CaptchaImages[GetIndex1D(x, y, 3)];
+                button.ButtonObject.ImageComponent.sprite = button.Img;
+            }
         }
+    }
 
+    public override bool Check()
+    {
+        // Disable all buttons
+        foreach (var button in CaptchaImages) button.ButtonObject.ButtonComponent.interactable = false;
+
+        int failCount = 0;
+        const int FailThreshold = 2;
+
+        // Count each incorrect input
+        foreach (var button in CaptchaImages) if ((button.ButtonObject.IsSelected && !button.IsCorrect) || (!button.ButtonObject.IsSelected && button.IsCorrect)) failCount++;
+
+        Debug.Log(failCount);
+        return failCount > FailThreshold;
+    }
+
+    public static int GetIndex1D(int x, int y, int rowCount) => y + rowCount * x;
+
+    public void DoCheck() => Check();
+
+    public void ResetScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+
+    private void DebugLogCorrectImages()
+    {
         string test = "";
         for (var i = 0; i < 3; i++)
         {
@@ -27,25 +54,6 @@ public class SelectImageCaptcha : Captcha
             }
             test += '\n';
         }
-        Debug.Log(test);   
+        Debug.Log(test);
     }
-
-    public override bool Check()
-    {
-        // Disable all buttons
-        foreach (var button in _buttons) button.GetComponent<Button>().interactable = false;
-
-        int failCount = 0;
-        const int FailThreshold = 2;
-
-        // Count each incorrect input
-        foreach (var button in _buttons) if ((button.IsSelected && !button.IsCorrect) || (!button.IsSelected && button.IsCorrect)) failCount++;
-
-        Debug.Log(failCount);
-        return failCount > FailThreshold;
-    }
-
-    public void DoCheck() => Check();
-
-    public void ResetScene() => UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
 }

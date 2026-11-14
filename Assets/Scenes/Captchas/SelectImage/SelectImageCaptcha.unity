@@ -292,7 +292,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -468, y: 215}
+  m_AnchoredPosition: {x: -464, y: -21}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &276415849
@@ -655,7 +655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -474, y: -23}
+  m_AnchoredPosition: {x: -604, y: 96}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429201053
@@ -1061,7 +1061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -599, y: 104}
+  m_AnchoredPosition: {x: -482, y: 223}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582464397
@@ -1208,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -597, y: -21}
+  m_AnchoredPosition: {x: -364, y: 229}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954475670
@@ -1447,7 +1447,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -342, y: -15}
+  m_AnchoredPosition: {x: -471, y: 92}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201250804
@@ -1727,7 +1727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -468, y: 98}
+  m_AnchoredPosition: {x: -336, y: -14}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409691585
@@ -1874,7 +1874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -338, y: 213}
+  m_AnchoredPosition: {x: -596, y: -15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1432261070
@@ -2015,43 +2015,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectImageCaptcha
   CaptchaImages:
-  - ImageComponent: {fileID: 0}
+  - ButtonObject: {fileID: 1856552832}
     Img: {fileID: 3158884462031704537, guid: 0c7f532afe2b643af8b53dd8ad2817b0, type: 3}
     IsCorrect: 1
-  - ImageComponent: {fileID: 0}
+  - ButtonObject: {fileID: 429201053}
     Img: {fileID: 9126577831000741705, guid: 86ef9b52ebc6d5b439e48724e31f916e, type: 3}
     IsCorrect: 0
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 1432261070}
+    Img: {fileID: -8506812384264320995, guid: b9b946b5188ee4922bd5a91d6efcdd01, type: 3}
     IsCorrect: 1
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 582464397}
+    Img: {fileID: 3765111319526120282, guid: 94cce456c875a493b805905e40f1f6ed, type: 3}
     IsCorrect: 1
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 1201250804}
+    Img: {fileID: -3326704012212865633, guid: 0fcc361db54c54c09bfed2c74cacf5e0, type: 3}
     IsCorrect: 1
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 276415849}
+    Img: {fileID: 8645299075525441375, guid: 2eb30478b64314997b34cf51c1935a6e, type: 3}
     IsCorrect: 0
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 954475670}
+    Img: {fileID: -9035727143155705755, guid: 3184ab06a4c166842ac9d19b8ec5e160, type: 3}
     IsCorrect: 0
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 570886620}
+    Img: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     IsCorrect: 1
-  - ImageComponent: {fileID: 0}
-    Img: {fileID: 0}
+  - ButtonObject: {fileID: 1409691585}
+    Img: {fileID: -1202096848997451918, guid: b9b946b5188ee4922bd5a91d6efcdd01, type: 3}
     IsCorrect: 0
-  _buttons:
-  - {fileID: 1856552832}
-  - {fileID: 582464397}
-  - {fileID: 954475670}
-  - {fileID: 429201053}
-  - {fileID: 1201250804}
-  - {fileID: 570886620}
-  - {fileID: 1432261070}
-  - {fileID: 276415849}
-  - {fileID: 1409691585}
 --- !u!4 &1836834080
 Transform:
   m_ObjectHideFlags: 0

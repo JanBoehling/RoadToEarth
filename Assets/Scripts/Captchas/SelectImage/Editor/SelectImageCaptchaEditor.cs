@@ -73,12 +73,12 @@ public class SelectImageCaptchaEditor : Editor
 
     private void DrawGrid(System.Action<int> editorGUILayoutField)
     {
-        for (int x = 0; x < RowCount; x++)
+        for (int y = 0; y < RowCount; y++)
         {
             EditorGUILayout.BeginHorizontal();
-            for (int y = 0; y < RowCount; y++)
+            for (int x = 0; x < RowCount; x++)
             {
-                editorGUILayoutField?.Invoke(y + RowCount * x);
+                editorGUILayoutField?.Invoke(SelectImageCaptcha.GetIndex1D(x, y, RowCount));
             }
             EditorGUILayout.EndHorizontal();
         }
@@ -88,7 +88,7 @@ public class SelectImageCaptchaEditor : Editor
 
     private void DrawConfigContext() => DrawGrid((i) => _target.CaptchaImages[i].IsCorrect = GUILayout.Toggle(_target.CaptchaImages[i].IsCorrect, "", _skin.button, SetWidthHeight(65.2f, 65.2f))); // Random-ass magic number to match size of object fields
 
-    private void DrawRefContext() => DrawGrid((i) => _target.CaptchaImages[i].ImageComponent = EditorGUILayout.ObjectField(_target.CaptchaImages[i].ImageComponent, typeof(UnityEngine.UI.Image), true, SetWidthHeight()) as UnityEngine.UI.Image);
+    private void DrawRefContext() => DrawGrid((i) => _target.CaptchaImages[i].ButtonObject = EditorGUILayout.ObjectField(_target.CaptchaImages[i].ButtonObject, typeof(SelectImageButton), true, SetWidthHeight()) as SelectImageButton);
 
     private GUILayoutOption[] SetWidthHeight(float width = 64, float height = 64) => new GUILayoutOption[] { GUILayout.Width(width), GUILayout.Height(height) };
     private GUILayoutOption SetWidth(float width = 64) => GUILayout.Width(width);
