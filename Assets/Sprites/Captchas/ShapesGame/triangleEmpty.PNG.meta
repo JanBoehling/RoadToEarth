@@ -5,6 +5,21 @@ TextureImporter:
   - first:
       213: -3156440739924269430
     second: triangleEmpty_0
+  - first:
+      213: 6440844350900804939
+    second: triangleEmpty_1
+  - first:
+      213: -7062015171391431331
+    second: triangleEmpty_2
+  - first:
+      213: -5561551715204316154
+    second: triangleEmpty_3
+  - first:
+      213: -4963772066169847586
+    second: triangleEmpty_4
+  - first:
+      213: -2251720356743228467
+    second: triangleEmpty_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,12 +118,12 @@ TextureImporter:
       name: triangleEmpty_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 2126
+        y: 750
+        width: 314
+        height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +136,121 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: triangleEmpty_1
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1028
+        width: 41
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d1605efc9726950800000000000000
+      internalID: 6440844350900804939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangleEmpty_2
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 1023
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d5bc62e9eaefd90800000000000000
+      internalID: -7062015171391431331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangleEmpty_3
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 1021
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604484f6e2661d2b0800000000000000
+      internalID: -5561551715204316154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangleEmpty_4
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 1018
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed080f1ea932d1bb0800000000000000
+      internalID: -4963772066169847586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: triangleEmpty_5
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 751
+        width: 314
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3ddc2044840c0e0800000000000000
+      internalID: -2251720356743228467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cc8a7b4ad8165487fa3f4661f2549537
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +261,11 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       triangleEmpty_0: -3156440739924269430
+      triangleEmpty_1: 6440844350900804939
+      triangleEmpty_2: -7062015171391431331
+      triangleEmpty_3: -5561551715204316154
+      triangleEmpty_4: -4963772066169847586
+      triangleEmpty_5: -2251720356743228467
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

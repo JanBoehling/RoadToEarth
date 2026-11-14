@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: 2402848213755455393
     second: starEmpty_0
+  - first:
+      213: 1390515849379549106
+    second: starEmpty_1
+  - first:
+      213: 8757961001858305816
+    second: starEmpty_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,10 +109,10 @@ TextureImporter:
       name: starEmpty_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 2088
+        y: 1084
+        width: 384
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,11 +127,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: starEmpty_1
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1070
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf81d83cca1c4310800000000000000
+      internalID: 1390515849379549106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starEmpty_2
+      rect:
+        serializedVersion: 2
+        x: 2308
+        y: 1092
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f0d7821278a8970800000000000000
+      internalID: 8757961001858305816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +186,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       starEmpty_0: 2402848213755455393
+      starEmpty_1: 1390515849379549106
+      starEmpty_2: 8757961001858305816
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

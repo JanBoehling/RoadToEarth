@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 8f95cc278d17e4ac299f8d1feb21866b
+guid: b9b946b5188ee4922bd5a91d6efcdd01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -405111759842901799
-    second: triangleFill_0
+      213: -8506812384264320995
+    second: starFilled_0
+  - first:
+      213: -1202096848997451918
+    second: starFilled_1
+  - first:
+      213: 3747961925860238590
+    second: starFilled_2
+  - first:
+      213: -8303000577190834098
+    second: starFilled_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: triangleFill_0
+      name: starFilled_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 2160
+        x: 748
+        y: 1084
+        width: 390
+        height: 422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d00b343001c06af0800000000000000
-      internalID: -405111759842901799
+      spriteID: d180801253bb1f980800000000000000
+      internalID: -8506812384264320995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starFilled_1
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1070
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277f3e9e84b415fe0800000000000000
+      internalID: -1202096848997451918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starFilled_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1092
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4a696938f630430800000000000000
+      internalID: 3747961925860238590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: starFilled_3
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1099
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e405daa57f0d5cc80800000000000000
+      internalID: -8303000577190834098
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      triangleFill_0: -405111759842901799
+      starFilled_0: -8506812384264320995
+      starFilled_1: -1202096848997451918
+      starFilled_2: 3747961925860238590
+      starFilled_3: -8303000577190834098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
