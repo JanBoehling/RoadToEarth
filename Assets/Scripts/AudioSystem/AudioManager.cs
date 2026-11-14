@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class AudioManager : MonoSingleton<AudioManager>
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
