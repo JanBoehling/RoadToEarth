@@ -304,11 +304,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 150702304}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 2
+        m_MethodName: PlayLocalClip
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: e1451b621f9f54d5289b871321475954, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -399,7 +399,7 @@ MonoBehaviour:
   _isPersistent: 0
   _playOnAwake: 0
   _isLooping: 0
-  _localClip: {fileID: 0}
+  _localClip: {fileID: 8300000, guid: de65a0291c48d2745929973a5ca098f9, type: 3}
 --- !u!1 &176216451
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,7 +512,7 @@ MonoBehaviour:
         m_MethodName: Play
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: e1451b621f9f54d5289b871321475954, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: de65a0291c48d2745929973a5ca098f9, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -880,11 +880,11 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 150702304}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 2
+        m_MethodName: PlayLocalClip
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: e1451b621f9f54d5289b871321475954, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1525,11 +1525,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 150702304}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 2
+        m_MethodName: PlayLocalClip
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: e1451b621f9f54d5289b871321475954, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
