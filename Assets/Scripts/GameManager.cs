@@ -1,10 +1,6 @@
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
+using System.Collections.Generic;
 
 public class GameManager : MonoSingleton<GameManager>
 {
@@ -24,7 +20,11 @@ public class GameManager : MonoSingleton<GameManager>
 
     public Comments.Neutrality CurrentNeutrality { get; private set; } = Comments.Neutrality.Neutral;
 
-    private int _currentCaptchaIndex = 0;
+    private static readonly Dictionary<Comments.Neutrality, int> _endingScenes = new()
+    {
+        { Comments.Neutrality.Positive, 3 },
+        { Comments.Neutrality.Negative, 4 }
+    };
 
     protected override void Awake()
     {
@@ -34,53 +34,24 @@ public class GameManager : MonoSingleton<GameManager>
         Input.Default.Enable();
     }
 
-    private void OnDestroy()
-    {
-        Input.Default.Disable();
-    }
+    private void OnDestroy() => Input.Default.Disable();
 
     /// <summary>
     /// Adds given value to evaluation value
     /// </summary>
     /// <param name="value">-1 or +1</param>
-    public void RaiseEvaluation(int value)
-    {
-        Evaluation += value;
-    }
+    public void RaiseEvaluation(int value) => Evaluation += value;
 
     /// <summary>
     /// Loads scene based on evaluation value<br/><br/>
     /// Bad ending if evaluation value is negative<br/>
     /// Good ending if evaluation value is 0 or positive
     /// </summary>
-    public void EvaluateEnding()
-    {
-        LoadScene(SceneCollection.EndingScenes[CurrentNeutrality]);
-    }
+    public void EvaluateEnding() => LoadScene(_endingScenes[CurrentNeutrality]);
 
     public void Quit() => Application.Quit();
 
-    public void LoadScene(int buildIndex, bool additive = false)
-    {
-        if (additive) SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene()); // TODO: This might unload the base scene instead of the additively added one. Please test!
-
-        SceneManager.LoadScene(buildIndex, additive ? LoadSceneMode.Additive : LoadSceneMode.Single);
-    }
+    public void LoadScene(int buildIndex) => SceneManager.LoadScene(buildIndex);
 
     public void LoadNextScene() => LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 }
-
-#if UNITY_EDITOR
-[CustomEditor(typeof(GameManager))]
-public class GameManagerEditor : Editor
-{
-    private GameManager _target;
-    private void OnEnable() => _target = (GameManager)target;
-    public override void OnInspectorGUI()
-    {
-        DrawPropertiesExcluding(serializedObject, "m_Script");
-        EditorGUILayout.Separator();
-        EditorGUILayout.LabelField($"Current Neutrality: {_target.CurrentNeutrality}");
-    }
-}
-#endif
