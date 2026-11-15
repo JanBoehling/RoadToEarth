@@ -30,7 +30,7 @@ public class SelectImageButton : MonoBehaviour
         if (IsSelected)
         {
             ImageComponent.color = SelectedColor;
-            toggledOn.Invoke(this);
+            toggledOn?.Invoke(this);
         }
         else
         {
