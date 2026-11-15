@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class CutsceneManager : MonoBehaviour
 {
-    [SerializeField] private bool _autoContinue = true;
+    [SerializeField] private float _musicFadeOutDurationOnStart = .5f;
+    [SerializeField] private float _musicFadeInDurationOnEnd = .5f;
 
     private Animator _animator;
 
@@ -20,7 +21,7 @@ public class CutsceneManager : MonoBehaviour
 
     private void Start()
     {
-        if (_autoContinue) StartCoroutine(AutoContinueAfterAnimCO());
+        StartCoroutine(AutoContinueAfterAnimCO());
     }
 
     private void Update()
@@ -29,7 +30,12 @@ public class CutsceneManager : MonoBehaviour
         if (GameManager.Instance.Input.Default.SkipCutscene.IsPressed())
         {
             _timer += Time.deltaTime;
-            if (_timer > SkipButtonHoldTime) LoadNextScene();
+            if (_timer > SkipButtonHoldTime)
+            {
+                var audioManager = FindFirstObjectByType<AudioManager>();
+                if (audioManager) audioManager.Resume(_musicFadeInDurationOnEnd);
+                LoadNextScene();
+            }
         }
         else _timer = 0f;
     }
@@ -37,9 +43,14 @@ public class CutsceneManager : MonoBehaviour
     private IEnumerator AutoContinueAfterAnimCO()
     {
         var audioManager = FindFirstObjectByType<AudioManager>();
-        if (audioManager) audioManager.Pause();
-        yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length);
-        if (audioManager) audioManager.Resume();
+        if (audioManager) audioManager.Pause(_musicFadeOutDurationOnStart);
+
+        float animationDuration = _animator.GetCurrentAnimatorStateInfo(0).length;
+        Debug.Log($"Waiting for {animationDuration} seconds");
+
+        yield return new WaitForSeconds(animationDuration);
+
+        if (audioManager) audioManager.Resume(_musicFadeInDurationOnEnd);
         LoadNextScene();
     }
 

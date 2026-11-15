@@ -399,6 +399,7 @@ MonoBehaviour:
   _isPersistent: 0
   _playOnAwake: 0
   _isLooping: 0
+  _volume: 1
   _localClip: {fileID: 8300000, guid: de65a0291c48d2745929973a5ca098f9, type: 3}
 --- !u!1 &176216451
 GameObject:
@@ -1699,6 +1700,7 @@ MonoBehaviour:
   _isPersistent: 1
   _playOnAwake: 1
   _isLooping: 1
+  _volume: 0.225
   _localClip: {fileID: 8300000, guid: c2e505d2a7445481abf2c0c98ec45692, type: 3}
 --- !u!1 &1188720103
 GameObject:
