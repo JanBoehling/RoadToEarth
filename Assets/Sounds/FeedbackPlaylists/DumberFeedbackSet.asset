@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioSet
   Set:
   - {fileID: 8300000, guid: bc42fda142add6442a150a19f668ec06, type: 3}
-  - {fileID: 0}
   - {fileID: 8300000, guid: fbf61dcfd4fb1be42b762929c823ffe7, type: 3}
   - {fileID: 8300000, guid: 8cb8460f043522643bb523cc2c2d9ff8, type: 3}
-  - {fileID: 0}
   - {fileID: 8300000, guid: fea73a864eefc2f4abda01a180528f43, type: 3}
