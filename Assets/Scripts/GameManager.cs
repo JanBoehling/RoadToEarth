@@ -54,4 +54,6 @@ public class GameManager : MonoSingleton<GameManager>
     public void LoadScene(int buildIndex) => SceneManager.LoadScene(buildIndex);
 
     public void LoadNextScene() => LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    public void ReturnToMainMenu() => LoadScene(0);
 }
