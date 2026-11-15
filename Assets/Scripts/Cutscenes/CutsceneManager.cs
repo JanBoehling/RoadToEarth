@@ -1,10 +1,9 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class CutsceneManager : MonoBehaviour
 {
-    [SerializeField] private bool _autoPlay = true;
+    [SerializeField] private bool _autoContinue = true;
 
     private Animator _animator;
 
@@ -21,7 +20,7 @@ public class CutsceneManager : MonoBehaviour
 
     private void Start()
     {
-        if (_autoPlay) StartCoroutine(AutoPlayAfterAnimCO());
+        if (_autoContinue) StartCoroutine(AutoContinueAfterAnimCO());
     }
 
     private void Update()
@@ -35,7 +34,7 @@ public class CutsceneManager : MonoBehaviour
         else _timer = 0f;
     }
 
-    private IEnumerator AutoPlayAfterAnimCO()
+    private IEnumerator AutoContinueAfterAnimCO()
     {
         var audioManager = FindFirstObjectByType<AudioManager>();
         if (audioManager) audioManager.Pause();
