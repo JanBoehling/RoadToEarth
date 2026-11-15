@@ -57,7 +57,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -113,11 +113,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 294
-        y: 688
-        width: 987
-        height: 323
+        y: 662
+        width: 1320
+        height: 349
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -130,77 +130,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: winbanner_1
-      rect:
-        serializedVersion: 2
-        x: 1273
-        y: 752
-        width: 195
-        height: 208
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0a27a494e8847ae80800000000000000
-      internalID: -8167479623260933472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: winbanner_2
-      rect:
-        serializedVersion: 2
-        x: 1385
-        y: 666
-        width: 239
-        height: 207
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a7c9cdfa53de4f80800000000000000
-      internalID: -8120320690344048734
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: winbanner_3
-      rect:
-        serializedVersion: 2
-        x: 693
-        y: 681
-        width: 43
-        height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94f554e5ee1704c30800000000000000
-      internalID: 4341595309382917961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 998978de386604134820f50fb0e467c0
     internalID: 0
     vertices: []
     indices: 
