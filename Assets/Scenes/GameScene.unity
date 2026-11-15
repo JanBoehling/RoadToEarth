@@ -968,7 +968,7 @@ MonoBehaviour:
   - {fileID: 8575600172984661566, guid: bddf314c842e346469a70dd17b226935, type: 3}
   _captchaContainer: {fileID: 1925425510}
   _riseAnimationSpeed: 400
-  _swivelMagnitude: 10
+  _swivelMagnitude: 4
   _angel: {fileID: 102132643}
   _angelAudioClip: {fileID: 0}
   _baby: {fileID: 208943873}
