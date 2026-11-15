@@ -1480,6 +1480,7 @@ MonoBehaviour:
   _promptText: Tidy up your room!
   _promptShowDuration: 3
   _endWaitDuration: 5
+  _validateSFX: {fileID: 8300000, guid: de2b183ebdfcb475498553a5eeced32a, type: 3}
 --- !u!1 &8575600172984661566
 GameObject:
   m_ObjectHideFlags: 0

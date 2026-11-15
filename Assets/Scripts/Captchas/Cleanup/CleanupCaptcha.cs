@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -7,12 +8,14 @@ public class CleanupCaptcha : MonoBehaviour
     [SerializeField] private CleanupItem[] _primaryObjects;
     [SerializeField] private CleanupItem[] _secondaryObjects;
     [SerializeField] private CleanupItem[] _tertiaryObjects;
-
+    [Space]
     [SerializeField] private TMP_Text _promptTextBox;
     [SerializeField, TextArea(1, 3)] private string _promptText;
     [SerializeField] private float _promptShowDuration = 3f;
-
+    [Space]
     [SerializeField] private float _endWaitDuration = 5f;
+    [Space]
+    [SerializeField] private AudioClip _validateSFX;
 
     private int _objectsDestroyed = 0;
 
@@ -41,9 +44,19 @@ public class CleanupCaptcha : MonoBehaviour
 
     private void EndCaptcha()
     {
+        CreateVeryDirtyAudioPlayerForValidateSFX();
+
         var controller = FindAnyObjectByType<CaptchaController>();
         if (controller) controller.LoadNextCaptcha(true);
         else Debug.LogWarning("Count not find CaptchaController in scene!");
+    }
+
+    private void CreateVeryDirtyAudioPlayerForValidateSFX()
+    {
+        var player = new GameObject("Very dirty audio player that will soon be destroyed. Please don't mind me", typeof(AudioManager)).GetComponent<AudioManager>();
+        player.Play(_validateSFX);
+        DontDestroyOnLoad(player);
+        Destroy(player, _validateSFX.length + 1f);
     }
 
     private void ToggleObjectInteraction(CleanupItem[] items, bool value)
