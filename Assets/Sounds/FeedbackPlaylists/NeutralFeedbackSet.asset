@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab405ebb16ef30c4cb8b102fa2364522, type: 3}
   m_Name: NeutralFeedbackSet
   m_EditorClassIdentifier: Assembly-CSharp::AudioSet
-  Set: []
+  Set:
+  - {fileID: 8300000, guid: 19b9f1372e964cb40960ffa4df907e22, type: 3}
+  - {fileID: 8300000, guid: 0e8ca0bc4a77da94b8a35985a9fd7f44, type: 3}
+  - {fileID: 8300000, guid: d6b5ce0b087934d4a846b00e47e43e26, type: 3}
+  - {fileID: 0}
