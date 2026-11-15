@@ -44,6 +44,6 @@ public class ShapesCatcha : MonoBehaviour
         var success = gameInstance.IsCorrect();
         GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
 
-        FindAnyObjectByType<CaptchaController>().LoadNextCaptcha();
+        FindAnyObjectByType<CaptchaController>().LoadNextCaptcha(success);
     }
 }

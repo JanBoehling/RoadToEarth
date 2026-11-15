@@ -1,9 +1,18 @@
+using System.Collections;
 using UnityEngine;
 
 public class CaptchaController : MonoBehaviour
 {
     [SerializeField] private GameObject[] _captchaPrefabs;
     [SerializeField] private Transform _captchaContainer;
+    [Space]
+    [SerializeField] private float _riseAnimationSpeed = 400f;
+    [SerializeField] private float _swivelMagnitude = 10f;
+    [SerializeField] private RectTransform _angel;
+    [SerializeField] private AudioClip _angelAudioClip;
+    [SerializeField] private RectTransform _baby;
+    [SerializeField] private AudioClip _babyAudioClip;
+    [SerializeField] private AudioManager _riseEffectAudioManager;
 
     private int _currentCaptchaIndex = -1;
 
@@ -13,19 +22,53 @@ public class CaptchaController : MonoBehaviour
     /// Destroys current captcha prefab and instantiates the next one in the list<br/>
     /// If the last captcha was instantiated, the next scene will be loaded
     /// </summary>
-    public void LoadNextCaptcha()
-    {
-        if (_currentCaptchaIndex >= _captchaPrefabs.Length - 1)
-        {
-            GameManager.Instance.EvaluateEnding();
-            return;
-        }
-
-        DestroyChild();
-        InstantiateCaptchaPrefab();
-    }
+    /// <param name="success">If the validation was successfull (good). Determines if angel(good/true) or baby(bad/false) rises</param>
+    public void LoadNextCaptcha(bool success) => StartCoroutine(LoadNextCaptchaCO(success));
 
     private void InstantiateCaptchaPrefab() => Instantiate(_captchaPrefabs[++_currentCaptchaIndex], _captchaContainer);
 
     private void DestroyChild() => Destroy(_captchaContainer.GetChild(0).gameObject);
+
+    private IEnumerator LoadNextCaptchaCO(bool success)
+    {
+        yield return PlayBabyAngelAnimCO(success ? _angel : _baby, success ? _angelAudioClip : _babyAudioClip);
+
+        // End game if all captchas are done
+        if (_currentCaptchaIndex >= _captchaPrefabs.Length - 1)
+        {
+            GameManager.Instance.EvaluateEnding();
+            yield break;
+        }
+        
+        // Load next captcha
+        DestroyChild();
+        InstantiateCaptchaPrefab();
+    }
+
+    private IEnumerator PlayBabyAngelAnimCO(RectTransform obj, AudioClip sfx)
+    {
+        obj.gameObject.SetActive(true);
+
+        var originalPosition = obj.anchoredPosition;
+        var cameraUpperBound = obj.GetComponentInParent<Canvas>().GetComponent<RectTransform>().sizeDelta.y * .5f + obj.sizeDelta.y * .5f;
+        Debug.Log($"Canvas size: {obj.GetComponentInParent<Canvas>().GetComponent<RectTransform>().sizeDelta}\nCamUpBound: {cameraUpperBound}");
+
+        if (sfx && _riseEffectAudioManager) _riseEffectAudioManager.Play(sfx);
+
+        while (obj.anchoredPosition.y < cameraUpperBound)
+        {
+            // Rise animation
+            obj.anchoredPosition += _riseAnimationSpeed * Time.deltaTime * Vector2.up;
+
+            // Swivel effect
+            obj.anchoredPosition += _swivelMagnitude * Random.Range(-1f, 1f) * Vector2.right;
+
+            yield return null;
+        }
+
+        if(sfx && _riseEffectAudioManager) _riseEffectAudioManager.Stop();
+
+        obj.anchoredPosition = originalPosition;
+        obj.gameObject.SetActive(false);
+    }
 }

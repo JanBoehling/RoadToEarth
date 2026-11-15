@@ -107,26 +107,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2603158038273113607, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2603158038273113607, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8432324229542931681}
-    - target: {fileID: 2603158038273113607, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayLocalClip
-      objectReference: {fileID: 0}
-    - target: {fileID: 2603158038273113607, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AudioManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2603158038273113607, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2809777195565689619, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -438,32 +418,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3979201399903831254, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5646994749735382470}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
---- !u!1 &3936704790545411323 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3979201399903831254, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-  m_PrefabInstance: {fileID: 115135022562338861}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5646994749735382470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3936704790545411323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dec032ea8f02a4c3cbb02e7bac64866b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  _isPersistent: 0
-  _playOnAwake: 0
-  _isLooping: 0
-  _localClip: {fileID: 8300000, guid: 7edf88190c7a5d7408095c9cc48895f7, type: 3}
 --- !u!224 &4570259142499565400 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4536770556256720757, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
@@ -480,14 +436,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807bfc1779b585e3eb120e979ad2a54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapesGame
---- !u!114 &8432324229542931681 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8402776292706714828, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
-  m_PrefabInstance: {fileID: 115135022562338861}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dec032ea8f02a4c3cbb02e7bac64866b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
