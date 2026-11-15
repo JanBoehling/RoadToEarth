@@ -13,6 +13,7 @@ public class CaptchaController : MonoBehaviour
     [SerializeField] private RectTransform _demon;
     [SerializeField] private AudioSet _demonAudioClips;
     [SerializeField] private AudioManager _riseEffectAudioManager;
+    [SerializeField] private AngelDevilSpawner _angelDevilSpawner;
 
     private int _currentCaptchaIndex = -1;
 
@@ -31,7 +32,13 @@ public class CaptchaController : MonoBehaviour
 
     private IEnumerator LoadNextCaptchaCO(bool success)
     {
-        yield return PlayDemonAngelAnimCO(success ? _angel : _demon, success ? _angelAudioClips.GetRandom() : _demonAudioClips.GetRandom());
+        if (success) _angelDevilSpawner.SpawnAngels();
+        else _angelDevilSpawner.SpawnDevils();
+
+        var audioClip = success ? _angelAudioClips.GetRandom() : _demonAudioClips.GetRandom();
+        if (audioClip != null && _riseEffectAudioManager != null) _riseEffectAudioManager.Play(audioClip);
+        yield return new WaitForSeconds(2.0f);
+        if(audioClip != null && _riseEffectAudioManager != null) _riseEffectAudioManager.Stop();
 
         // End game if all captchas are done
         if (_currentCaptchaIndex >= _captchaPrefabs.Length - 1)
