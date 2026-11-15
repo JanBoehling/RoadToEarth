@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 7adc0fc456c554db1945b1bb6ff999ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3666924191760149299
+    second: failbanner_0
+  - first:
+      213: -2354880426560975942
+    second: failbanner_1
+  - first:
+      213: 2500198396199741692
+    second: failbanner_2
+  - first:
+      213: 5755536018796629174
+    second: failbanner_3
+  - first:
+      213: -3198496988788750865
+    second: failbanner_4
+  - first:
+      213: -4910290885898738606
+    second: failbanner_5
+  - first:
+      213: 2898366776472945965
+    second: failbanner_6
+  - first:
+      213: -7198504246832680512
+    second: failbanner_7
+  - first:
+      213: 7792619834291269658
+    second: failbanner_8
+  - first:
+      213: 5913705991377609196
+    second: failbanner_9
+  - first:
+      213: -3391173411300153111
+    second: failbanner_10
+  - first:
+      213: 1753302796439488222
+    second: failbanner_11
+  - first:
+      213: 5571084943459111271
+    second: failbanner_12
+  - first:
+      213: -2040876661184383383
+    second: failbanner_13
+  - first:
+      213: -3516636239047428578
+    second: failbanner_14
+  - first:
+      213: -876965254564243862
+    second: failbanner_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: failbanner_0
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 774
+        width: 379
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b662ccf1883e230800000000000000
+      internalID: 3666924191760149299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_1
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 783
+        width: 365
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb005e8ab8c15fd0800000000000000
+      internalID: -2354880426560975942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_2
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 735
+        width: 94
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8ac79d13d72b220800000000000000
+      internalID: 2500198396199741692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_3
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 810
+        width: 118
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bcc654d385cfdf40800000000000000
+      internalID: 5755536018796629174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_4
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 737
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe507106fe7ac93d0800000000000000
+      internalID: -3198496988788750865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_5
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 741
+        width: 26
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254ea2284742bdbb0800000000000000
+      internalID: -4910290885898738606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_6
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 745
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25c67c1a31193820800000000000000
+      internalID: 2898366776472945965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_7
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 749
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1b56dd686c91c90800000000000000
+      internalID: -7198504246832680512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_8
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 752
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a103894c372f42c60800000000000000
+      internalID: 7792619834291269658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 751
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1692a5444b11250800000000000000
+      internalID: 5913705991377609196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_10
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 748
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e864b7efb120f0d0800000000000000
+      internalID: -3391173411300153111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_11
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 743
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6897d9a9bf45810800000000000000
+      internalID: 1753302796439488222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_12
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 734
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 761586c3d38705d40800000000000000
+      internalID: 5571084943459111271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_13
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 729
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96638bb5d795da3e0800000000000000
+      internalID: -2040876661184383383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_14
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 721
+        width: 29
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16ff47f8f5623fc0800000000000000
+      internalID: -3516636239047428578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: failbanner_15
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 716
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6696515fb464d3f0800000000000000
+      internalID: -876965254564243862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      failbanner_0: 3666924191760149299
+      failbanner_1: -2354880426560975942
+      failbanner_10: -3391173411300153111
+      failbanner_11: 1753302796439488222
+      failbanner_12: 5571084943459111271
+      failbanner_13: -2040876661184383383
+      failbanner_14: -3516636239047428578
+      failbanner_15: -876965254564243862
+      failbanner_2: 2500198396199741692
+      failbanner_3: 5755536018796629174
+      failbanner_4: -3198496988788750865
+      failbanner_5: -4910290885898738606
+      failbanner_6: 2898366776472945965
+      failbanner_7: -7198504246832680512
+      failbanner_8: 7792619834291269658
+      failbanner_9: 5913705991377609196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

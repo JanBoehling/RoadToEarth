@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: e4ae5a2b2fd5f48748d64490837c873c
+guid: 06e96cd88d3694dd18cd70558b652423
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2173673749106735445
-    second: Windows Taskleiste_0
+      213: 8187749374155383136
+    second: winbanner_0
+  - first:
+      213: -8167479623260933472
+    second: winbanner_1
+  - first:
+      213: -8120320690344048734
+    second: winbanner_2
+  - first:
+      213: 4341595309382917961
+    second: winbanner_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Windows Taskleiste_0
+      name: winbanner_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 86
-        width: 1920
-        height: 160
+        x: 294
+        y: 688
+        width: 987
+        height: 323
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 5, z: 0, w: 18}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba6c6e6ed3f85d1e0800000000000000
-      internalID: -2173673749106735445
+      spriteID: 061657cdcaab0a170800000000000000
+      internalID: 8187749374155383136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winbanner_1
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 752
+        width: 195
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a27a494e8847ae80800000000000000
+      internalID: -8167479623260933472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winbanner_2
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 666
+        width: 239
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7c9cdfa53de4f80800000000000000
+      internalID: -8120320690344048734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: winbanner_3
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 681
+        width: 43
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f554e5ee1704c30800000000000000
+      internalID: 4341595309382917961
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: efa54d3255047463db335c3bcfd121fb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Windows Taskleiste_0: -2173673749106735445
+      winbanner_0: 8187749374155383136
+      winbanner_1: -8167479623260933472
+      winbanner_2: -8120320690344048734
+      winbanner_3: 4341595309382917961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
