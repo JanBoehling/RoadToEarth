@@ -7,7 +7,7 @@ public class DisableAllButtons : MonoBehaviour
 
     public void DisableAllInteractables()
     {
-        var interactables = GetComponentsInChildren<Selectable>();
+        var interactables = _parent.GetComponentsInChildren<Selectable>();
         foreach (var interactable in interactables) interactable.interactable = false;
     }
 }
