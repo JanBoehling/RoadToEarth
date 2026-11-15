@@ -9,9 +9,9 @@ public class CaptchaController : MonoBehaviour
     [SerializeField] private float _riseAnimationSpeed = 400f;
     [SerializeField] private float _swivelMagnitude = 10f;
     [SerializeField] private RectTransform _angel;
-    [SerializeField] private AudioClip _angelAudioClip;
-    [SerializeField] private RectTransform _baby;
-    [SerializeField] private AudioClip _babyAudioClip;
+    [SerializeField] private AudioSet _angelAudioClips;
+    [SerializeField] private RectTransform _demon;
+    [SerializeField] private AudioSet _demonAudioClips;
     [SerializeField] private AudioManager _riseEffectAudioManager;
 
     private int _currentCaptchaIndex = -1;
@@ -31,7 +31,7 @@ public class CaptchaController : MonoBehaviour
 
     private IEnumerator LoadNextCaptchaCO(bool success)
     {
-        yield return PlayBabyAngelAnimCO(success ? _angel : _baby, success ? _angelAudioClip : _babyAudioClip);
+        yield return PlayDemonAngelAnimCO(success ? _angel : _demon, success ? _angelAudioClips.GetRandom() : _demonAudioClips.GetRandom());
 
         // End game if all captchas are done
         if (_currentCaptchaIndex >= _captchaPrefabs.Length - 1)
@@ -45,7 +45,7 @@ public class CaptchaController : MonoBehaviour
         InstantiateCaptchaPrefab();
     }
 
-    private IEnumerator PlayBabyAngelAnimCO(RectTransform obj, AudioClip sfx)
+    private IEnumerator PlayDemonAngelAnimCO(RectTransform obj, AudioClip sfx)
     {
         obj.gameObject.SetActive(true);
 
