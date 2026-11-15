@@ -39,4 +39,8 @@ public class AudioManager : MonoBehaviour
     {
         if (_audioSource.clip) _audioSource.UnPause();
     }
+    public void Stop()
+    {
+        if (_audioSource.clip) _audioSource.Stop();
+    }
 }
