@@ -37,8 +37,7 @@ public class CaptchaController : MonoBehaviour
 
         var audioClip = success ? _angelAudioClips.GetRandom() : _demonAudioClips.GetRandom();
         if (audioClip != null && _riseEffectAudioManager != null) _riseEffectAudioManager.Play(audioClip);
-        yield return new WaitForSeconds(2.0f);
-        if(audioClip != null && _riseEffectAudioManager != null) _riseEffectAudioManager.Stop();
+        yield return new WaitForSeconds(Mathf.Max(2f, audioClip.length));
 
         // End game if all captchas are done
         if (_currentCaptchaIndex >= _captchaPrefabs.Length - 1)
