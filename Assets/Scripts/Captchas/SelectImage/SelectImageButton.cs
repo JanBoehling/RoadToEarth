@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -5,6 +6,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button), typeof(Image))]
 public class SelectImageButton : MonoBehaviour
 {
+    public event Action<SelectImageButton> toggledOn;
     private Color SelectedColor = new Color(0.518f, 0.69f, 0.404f, 0.7f);
     private Color UnselectedColor = new Color(1f, 1f, 1f, 1f);
 
@@ -22,11 +24,13 @@ public class SelectImageButton : MonoBehaviour
 
     public void ToggleButton()
     {
+
         IsSelected = !IsSelected;
 
         if (IsSelected)
         {
             ImageComponent.color = SelectedColor;
+            toggledOn.Invoke(this);
         }
         else
         {

@@ -1,33 +1,95 @@
+using System.Collections.Generic;
+using System.Linq;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
+using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
 {
-    public GameObject[] questions;
+    public Button[] btns;
+
+    public QuestionList[] questions;
+
+    public TMP_Text[] btnTxts;
+
+    public TMP_Text qstnTxt;
+
+    private QuestionList selectedQuestion;
+
+    private static List<int> usedQuestions = new();
+
+
+    private void Awake()
+    {
+        foreach (var btn in btns)
+        {
+            btn.GetComponent<SelectImageButton>().toggledOn += toggleOthersOff;
+        }
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Alle Fragen deaktivieren
-        for (int i = 0; i < questions.Length; i++)
-        {
-            questions[i].SetActive(false);
-        }
-
         //Eine random Frage auswählen und anzeigen
         int randomNumber = Random.Range(0, questions.Length);
-        questions[randomNumber].SetActive(true);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (usedQuestions.Contains(randomNumber))
+        {
+            randomNumber = Random.Range(0, questions.Length);
+        }
+
+        selectedQuestion = questions[randomNumber];
+        usedQuestions.Append(randomNumber);
+
+        ShowQuestion(selectedQuestion);
     }
 
     public void changeSzene()
     {
-        //Punkte auszählen + merken
-        //Szenenwechsel
+        var controller = FindAnyObjectByType<CaptchaController>();
+        if (controller) controller.LoadNextCaptcha();
+
         Debug.Log("Here comes the next Captcha");
+    }
+
+    private void toggleOthersOff(SelectImageButton button)
+    {
+        foreach(var btn in btns)
+        {
+            var selectBtn = btn.GetComponent<SelectImageButton>();
+
+            if (selectBtn.IsSelected && !button.Equals(selectBtn))
+            {
+                selectBtn.ToggleButton();
+            }
+        }
+    }
+
+    private void ShowQuestion(QuestionList question)
+    {
+        qstnTxt.text = question.question;
+
+        for (int i = 0; i  < btnTxts.Length; i++)
+        {
+            btnTxts[i].text = question.answers[i];
+        }
+    }
+
+    public void ValidateAnswer()
+    {
+        for(int i = 0;i < btns.Length; i++)
+        {
+            var button = btns[i].GetComponent<SelectImageButton>();
+
+            if (button.IsSelected)
+            {
+                var isCorrect = i == selectedQuestion.correctIndex;
+                GameManager.Instance.RaiseEvaluation(isCorrect ? 1 : -1);
+
+                changeSzene();
+            }
+        }
     }
 }
