@@ -35,12 +35,6 @@ public class AudioManager : MonoBehaviour
         _audioSource.clip = clip;
         PlayLocalClip();
     }
-    public void Play(AudioClip clip, float volume)
-    {
-        _audioSource.clip = clip;
-        _audioSource.volume = volume;
-        PlayLocalClip();
-    }
     public void PlayRandomFromSet(AudioSet audioSet)
     {
         Play(audioSet.Set[Random.Range(0, audioSet.Length)]);
@@ -59,6 +53,7 @@ public class AudioManager : MonoBehaviour
     {
         if (_audioSource.clip) _audioSource.Stop();
     }
+    public void SetVolume(float volume) => _audioSource.volume = volume;
 
     private IEnumerator PauseCO(float fadeDuration)
     {
