@@ -42,7 +42,7 @@ public class CleanupCaptcha : MonoBehaviour
     private void EndCaptcha()
     {
         var controller = FindAnyObjectByType<CaptchaController>();
-        if (controller) controller.LoadNextCaptcha();
+        if (controller) controller.LoadNextCaptcha(true);
         else Debug.LogWarning("Count not find CaptchaController in scene!");
     }
 
