@@ -3,7 +3,7 @@ using UnityEngine;
 public class InactivityMonitor : MonoSingleton<InactivityMonitor>
 {
     [SerializeField] private float _inactivityThreshold = 60f;
-    [SerializeField] private AudioClip[] _inactivityVoicelines;
+    [SerializeField] private AudioSet _inactivityVoicelines;
 
     private AudioManager _voicelineAudioManager;
     private float _timer = 0f;
@@ -29,7 +29,7 @@ public class InactivityMonitor : MonoSingleton<InactivityMonitor>
     private void DisplayInactivityMessage(string msg)
     {
         Debug.Log(msg);
-        if (_inactivityVoicelines.Length > 0) _voicelineAudioManager.Play(_inactivityVoicelines[Random.Range(0, _inactivityVoicelines.Length)]);
+        if (_inactivityVoicelines && _inactivityVoicelines.Length > 0) _voicelineAudioManager.Play(_inactivityVoicelines.Set[Random.Range(0, _inactivityVoicelines.Length)]);
     }
 
     public bool CheckForInactivity() => _timer > _inactivityThreshold;
