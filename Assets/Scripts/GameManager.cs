@@ -55,10 +55,22 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void LoadNextScene() => LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+    /// <summary>
+    /// Danger: cursed fucking code
+    /// </summary>
     public void ReturnToMainMenu()
     {
+        // Destroying current GameManager so that the GameManager in the begining scene will not annihilate this one like some positron and electron
         Destroy(GameManager.Instance.gameObject);
         GameManager.Instance = null;
+
+        // Destroying all AudioManagers so that there will be no background music AudioManager. I could also just destroy only that one but fuck it, scorched earth it is
+        var audioPlayers = FindObjectsByType<AudioManager>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = audioPlayers.Length - 1; i >= 0; i--)
+        {
+            Destroy(audioPlayers[i].gameObject);
+        }
+
         LoadScene(0);
     }
 }
