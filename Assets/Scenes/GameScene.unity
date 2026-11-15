@@ -347,6 +347,7 @@ MonoBehaviour:
   _isPersistent: 0
   _playOnAwake: 0
   _isLooping: 0
+  _volume: 1
   _localClip: {fileID: 0}
 --- !u!4 &385606498
 Transform:
@@ -605,10 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InactivityMonitor
   _inactivityThreshold: 60
-  _inactivityVoicelines:
-  - {fileID: 8300000, guid: 3cfe1bf248b0a6446afd50edd1853810, type: 3}
-  - {fileID: 8300000, guid: b4484bb18ba4fd74391a7250489b08f7, type: 3}
-  - {fileID: 8300000, guid: 9484fe066ad744d4c95809d86f8b0874, type: 3}
+  _inactivityVoicelines: {fileID: 11400000, guid: 97da84ec86c73420ebd9186d74a455f8, type: 2}
 --- !u!4 &585767116
 Transform:
   m_ObjectHideFlags: 0
@@ -932,6 +930,7 @@ MonoBehaviour:
   _isPersistent: 0
   _playOnAwake: 0
   _isLooping: 0
+  _volume: 1
   _localClip: {fileID: 0}
 --- !u!1 &1828275800
 GameObject:
