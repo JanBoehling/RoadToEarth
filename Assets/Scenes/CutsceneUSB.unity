@@ -603,10 +603,14 @@ PrefabInstance:
     - target: {fileID: 4310179217574751803, guid: db2400f5b5357aa4f95b875887994fbd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1539810861}
+      objectReference: {fileID: 2039867944}
     - target: {fileID: 4310179217574751803, guid: db2400f5b5357aa4f95b875887994fbd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310179217574751803, guid: db2400f5b5357aa4f95b875887994fbd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6059864031460170086, guid: db2400f5b5357aa4f95b875887994fbd, type: 3}
       propertyPath: m_Pivot.x
@@ -698,50 +702,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6059864031460170086, guid: db2400f5b5357aa4f95b875887994fbd, type: 3}
   m_PrefabInstance: {fileID: 1532405924}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1539810860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1539810862}
-  - component: {fileID: 1539810861}
-  m_Layer: 0
-  m_Name: EndScreenmanager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1539810861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539810860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26b4956dacac05f46b472bffc30b633b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
---- !u!4 &1539810862
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539810860}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 897.5449, y: 542.6737, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699730773
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,6 +880,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932845668}
   m_CullTransparentMesh: 1
+--- !u!1 &2039867943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039867945}
+  - component: {fileID: 2039867944}
+  m_Layer: 0
+  m_Name: EndSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2039867944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039867943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec15a183c0bfed428c398f23d163ce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndSceneManager
+--- !u!4 &2039867945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039867943}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2093454563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1011,10 +1015,14 @@ PrefabInstance:
     - target: {fileID: 7292896293126206438, guid: a4b98b436c2d09347915af3d778833b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1539810861}
+      objectReference: {fileID: 2039867944}
     - target: {fileID: 7292896293126206438, guid: a4b98b436c2d09347915af3d778833b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292896293126206438, guid: a4b98b436c2d09347915af3d778833b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndSceneManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7729772986125214514, guid: a4b98b436c2d09347915af3d778833b6, type: 3}
       propertyPath: m_Name
@@ -1036,5 +1044,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1046133248}
   - {fileID: 275154070}
-  - {fileID: 1539810862}
   - {fileID: 74902627}
+  - {fileID: 2039867945}
