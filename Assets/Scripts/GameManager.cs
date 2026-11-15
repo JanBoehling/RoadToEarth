@@ -55,5 +55,10 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void LoadNextScene() => LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
-    public void ReturnToMainMenu() => LoadScene(0);
+    public void ReturnToMainMenu()
+    {
+        Destroy(GameManager.Instance.gameObject);
+        GameManager.Instance = null;
+        LoadScene(0);
+    }
 }

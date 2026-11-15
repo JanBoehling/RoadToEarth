@@ -28,6 +28,8 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoBehaviour
                 return _instance;
             }
         }
+
+        protected set => _instance = value;
     }
 
     protected virtual void Awake()
