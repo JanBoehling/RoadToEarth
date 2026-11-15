@@ -20,6 +20,7 @@ public class CleanupItem : MonoBehaviour
 
     private void OnClickAction()
     {
+        Debug.Log("OnClickAction");
         _controller.DestroyObject(gameObject);
     }
 }

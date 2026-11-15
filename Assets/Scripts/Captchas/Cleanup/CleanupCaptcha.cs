@@ -29,6 +29,7 @@ public class CleanupCaptcha : MonoBehaviour
 
     public void DestroyObject(GameObject obj)
     {
+        Debug.Log($"Destroying object {obj.name}");
         Destroy(obj);
         _objectsDestroyed++;
 

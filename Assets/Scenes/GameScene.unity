@@ -969,7 +969,7 @@ MonoBehaviour:
   - {fileID: 8575600172984661566, guid: bddf314c842e346469a70dd17b226935, type: 3}
   - {fileID: 987699248839905516, guid: 55aac230c9d222c40ac9a50a0994fcbf, type: 3}
   _captchaContainer: {fileID: 1925425510}
-  _riseAnimationSpeed: 400
+  _riseAnimationSpeed: 500
   _swivelMagnitude: 4
   _angel: {fileID: 102132643}
   _angelAudioClips: {fileID: 11400000, guid: 74674779a358e45589b675739eb01b96, type: 2}
