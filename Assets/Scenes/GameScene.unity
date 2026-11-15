@@ -972,9 +972,9 @@ MonoBehaviour:
   _riseAnimationSpeed: 500
   _swivelMagnitude: 4
   _angel: {fileID: 102132643}
-  _angelAudioClips: {fileID: 11400000, guid: 74674779a358e45589b675739eb01b96, type: 2}
+  _angelAudioClips: {fileID: 11400000, guid: 0aee3d82d2a314cfd9a68ebace0148cf, type: 2}
   _demon: {fileID: 208943873}
-  _demonAudioClips: {fileID: 11400000, guid: 0aee3d82d2a314cfd9a68ebace0148cf, type: 2}
+  _demonAudioClips: {fileID: 11400000, guid: 74674779a358e45589b675739eb01b96, type: 2}
   _riseEffectAudioManager: {fileID: 1731229500}
 --- !u!4 &1828275802
 Transform:
