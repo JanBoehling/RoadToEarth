@@ -408,6 +408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3859e761ab580a94f95a8b694da718a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InactivityMonitor
+  _inactivityThreshold: 60
+  _inactivityVoicelines: []
 --- !u!4 &585767116
 Transform:
   m_ObjectHideFlags: 0

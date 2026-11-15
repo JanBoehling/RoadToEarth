@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class InactivityMonitor : MonoSingleton<InactivityMonitor>
 {
-    private const float InactivityThreshold = 60f;
-    private float _timer = 0f;
-
+    [SerializeField] private float _inactivityThreshold = 60f;
     [SerializeField] private AudioClip[] _inactivityVoicelines;
+
     private AudioManager _voicelineAudioManager;
+    private float _timer = 0f;
 
     protected override void Awake()
     {
@@ -32,5 +32,5 @@ public class InactivityMonitor : MonoSingleton<InactivityMonitor>
         if (_inactivityVoicelines.Length > 0) _voicelineAudioManager.Play(_inactivityVoicelines[Random.Range(0, _inactivityVoicelines.Length)]);
     }
 
-    public bool CheckForInactivity() => _timer > InactivityThreshold;
+    public bool CheckForInactivity() => _timer > _inactivityThreshold;
 }
