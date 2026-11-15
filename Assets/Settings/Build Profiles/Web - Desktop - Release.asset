@@ -49,7 +49,7 @@ MonoBehaviour:
     - line: '|   productName: RoadToEarth'
     - line: '|   defaultCursor: {fileID: 2800000, guid: 32ee7983a35dcd849a041bb6c3ce368a,
         type: 3}'
-    - line: '|   cursorHotspot: {x: 48, y: 16}'
+    - line: '|   cursorHotspot: {x: 24, y: 8}'
     - line: '|   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b:
         0.1254902, a: 1}'
     - line: '|   m_ShowUnitySplashScreen: 1'
