@@ -990,6 +990,7 @@ GameObject:
   - component: {fileID: 1404072999803524465}
   - component: {fileID: 3288328822415579812}
   - component: {fileID: 3848586658874543341}
+  - component: {fileID: 5288831556885062696}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -1110,6 +1111,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5288831556885062696}
+        m_TargetAssemblyTypeName: DisableAllButtons, Assembly-CSharp
+        m_MethodName: DisableAllInteractables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5288831556885062696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3705594064550104351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4665096d28a95141bcc6434330a1bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisableAllButtons
+  _parent: {fileID: 987699248839905516}
 --- !u!1 &4462362145007628851
 GameObject:
   m_ObjectHideFlags: 0

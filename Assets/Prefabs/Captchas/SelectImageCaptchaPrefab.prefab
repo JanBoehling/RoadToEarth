@@ -904,12 +904,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3612002514422215041, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 344123059165157657}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
@@ -917,7 +925,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6151444042416125147}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 83568637975351206}
+    - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
@@ -925,11 +941,23 @@ PrefabInstance:
       value: EvaluateSelectImageCaptcha
       objectReference: {fileID: 0}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DisableAllInteractables
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: SelectImageCaptcha, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: DisableAllButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3863282045988017604, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8327694995844370348, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
@@ -941,6 +969,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+--- !u!114 &83568637975351206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3612002514422215041, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}
+  m_PrefabInstance: {fileID: 3677343154263457319}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4665096d28a95141bcc6434330a1bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisableAllButtons
 --- !u!224 &285289503731527904 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3529979157226639047, guid: 5008c632ac5334002bdfd94ec31f76fc, type: 3}

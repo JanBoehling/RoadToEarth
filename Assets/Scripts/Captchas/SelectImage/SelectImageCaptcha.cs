@@ -44,6 +44,8 @@ public class SelectImageCaptcha : Captcha
 
     public void EvaluateSelectImageCaptcha()
     {
+
+
         bool success = Check();
         GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
 

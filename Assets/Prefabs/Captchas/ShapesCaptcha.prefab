@@ -335,6 +335,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5929813992712577123, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: _parent
+      value: 
+      objectReference: {fileID: 4046201432337250348}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6040423149161334862}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisableAllInteractables
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DisableAllButtons, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194602071664133158, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6403126444638248335, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -420,17 +452,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+--- !u!1 &4046201432337250348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4161313354149498881, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+  m_PrefabInstance: {fileID: 115135022562338861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4570259142499565400 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4536770556256720757, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
   m_PrefabInstance: {fileID: 115135022562338861}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6040423149161334862 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5929813992712577123, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
+  m_PrefabInstance: {fileID: 115135022562338861}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4665096d28a95141bcc6434330a1bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DisableAllButtons
 --- !u!114 &7522434124884258384 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7636987083814880893, guid: 61b9587515f69a83b898510f3bdbc4cf, type: 3}
   m_PrefabInstance: {fileID: 115135022562338861}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4046201432337250348}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 807bfc1779b585e3eb120e979ad2a54f, type: 3}
