@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Frage 3
   m_EditorClassIdentifier: Assembly-CSharp::QuestionList
   question: "Bitte nimm dir kurz Zeit f\xFCr eine Umfrage.  Welche Werbung hast du
-    in deiner Zeit im Himmel gesehen? <Insert Game names von den anderen> Richtig:
-    Alle m\xFCssen angeklickt werden."
+    in deiner Zeit im Himmel gesehen?"
   answers:
   - Road to Earth
   - Nature's Flow

@@ -41,9 +41,9 @@ public class ShapesCatcha : MonoBehaviour
     {
         if (!gameInstance.IsDone()) return;
         
-        var success = gameInstance.IsCorrect();
+        var success = !gameInstance.IsCorrect(); // Right is wrong lol
         GameManager.Instance.RaiseEvaluation(success ? 1 : -1);
-
-        FindAnyObjectByType<CaptchaController>().LoadNextCaptcha(success);
+        var controller = FindAnyObjectByType<CaptchaController>();
+        if (controller) controller.LoadNextCaptcha(success);
     }
 }
