@@ -963,8 +963,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CaptchaController
   _captchaPrefabs:
   - {fileID: 344123059165157657, guid: f948d7bbaf0fe0849af3d8dc462e75e9, type: 3}
+  - {fileID: 987699248839905516, guid: 55aac230c9d222c40ac9a50a0994fcbf, type: 3}
   - {fileID: 9156508043074005148, guid: abd269898ce84b9d3b4b636fb2bbee6f, type: 3}
+  - {fileID: 987699248839905516, guid: 55aac230c9d222c40ac9a50a0994fcbf, type: 3}
   - {fileID: 8575600172984661566, guid: bddf314c842e346469a70dd17b226935, type: 3}
+  - {fileID: 987699248839905516, guid: 55aac230c9d222c40ac9a50a0994fcbf, type: 3}
   _captchaContainer: {fileID: 1925425510}
   _riseAnimationSpeed: 400
   _swivelMagnitude: 4

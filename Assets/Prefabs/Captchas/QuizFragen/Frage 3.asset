@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a3a779e3b168044a0ef415aa559dca, type: 3}
   m_Name: Frage 3
   m_EditorClassIdentifier: Assembly-CSharp::QuestionList
-  question: Blas
+  question: "Bitte nimm dir kurz Zeit f\xFCr eine Umfrage.  Welche Werbung hast du
+    in deiner Zeit im Himmel gesehen? <Insert Game names von den anderen> Richtig:
+    Alle m\xFCssen angeklickt werden."
   answers:
-  - 1
-  - 2
+  - Road to Earth
+  - Nature's Flow
   - 3
   - 4
   correctIndex: 0

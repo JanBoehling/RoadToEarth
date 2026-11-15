@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a3a779e3b168044a0ef415aa559dca, type: 3}
   m_Name: Frage 1
   m_EditorClassIdentifier: Assembly-CSharp::QuestionList
-  question: Bla
+  question: Welcher Monat hat 28 Tage?
   answers:
-  - 1
-  - 2
-  - 3
-  - 4
-  correctIndex: 0
+  - Alle
+  - Keiner
+  - Februar
+  - "Tage zu z\xE4hlen ist ein \xFCberholtes Konzept. 2.419.200 Sekunden ist viel
+    eindeutiger."
+  correctIndex: 3

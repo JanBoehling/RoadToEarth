@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a3a779e3b168044a0ef415aa559dca, type: 3}
   m_Name: Frage 2
   m_EditorClassIdentifier: Assembly-CSharp::QuestionList
-  question: Bla
+  question: Womit endet die Ewigkeit?
   answers:
-  - 1
-  - 2
-  - 3
-  - 4
-  correctIndex: 0
+  - In dem den neuen Super-Koch einstellt! Jetzt um 30% reduziert. Greifen Sie zu!
+  - Mit diesem Test.
+  - Mit einem t.
+  - Nie.
+  correctIndex: 4

@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -46,14 +47,6 @@ public class QuizManager : MonoBehaviour
         ShowQuestion(selectedQuestion);
     }
 
-    public void changeSzene()
-    {
-        var controller = FindAnyObjectByType<CaptchaController>();
-        if (controller) controller.LoadNextCaptcha();
-
-        Debug.Log("Here comes the next Captcha");
-    }
-
     private void toggleOthersOff(SelectImageButton button)
     {
         foreach(var btn in btns)
@@ -71,11 +64,12 @@ public class QuizManager : MonoBehaviour
     {
         qstnTxt.text = question.question;
 
-        for (int i = 0; i  < btnTxts.Length; i++)
+        for (int i = 0; i < btnTxts.Length; i++)
         {
             btnTxts[i].text = question.answers[i];
         }
     }
+    
 
     public void ValidateAnswer()
     {
@@ -88,7 +82,8 @@ public class QuizManager : MonoBehaviour
                 var isCorrect = i == selectedQuestion.correctIndex;
                 GameManager.Instance.RaiseEvaluation(isCorrect ? 1 : -1);
 
-                changeSzene();
+                var controller = FindAnyObjectByType<CaptchaController>();
+                if (controller) controller.LoadNextCaptcha(isCorrect);
             }
         }
     }
