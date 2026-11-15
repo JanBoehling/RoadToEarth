@@ -1760,8 +1760,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\nThis Game was made by  \nGray Castaneda, Marija Najdoska, Rain Becker,
-    Alex Spernau, Maren Rautmann, Jan B\xF6hling und Daniel\nat the Franken Game
-    Jam 2026 in Nuermberg"
+    Alex Spernau, Maren Rautmann, Jan B\xF6hling und David\nat the Franken Game Jam
+    2026 in Nuermberg"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a6c2c1d5d04da4680b5c1f4d5e43d2bd, type: 2}
   m_sharedMaterial: {fileID: -2239701749314555698, guid: a6c2c1d5d04da4680b5c1f4d5e43d2bd, type: 2}
