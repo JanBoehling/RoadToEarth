@@ -129,12 +129,12 @@ TextureImporter:
       name: Baby_0
       rect:
         serializedVersion: 2
-        x: 1111
-        y: 122
-        width: 517
-        height: 856
+        x: 1088
+        y: 108
+        width: 559
+        height: 880
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: eda560d51dfe945e5b8c6a5f76e76d2c
     internalID: 0
     vertices: []
     indices: 
