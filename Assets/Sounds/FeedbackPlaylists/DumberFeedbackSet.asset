@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab405ebb16ef30c4cb8b102fa2364522, type: 3}
+  m_Name: DumberFeedbackSet
+  m_EditorClassIdentifier: Assembly-CSharp::AudioSet
+  Set:
+  - {fileID: 8300000, guid: bc42fda142add6442a150a19f668ec06, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: fbf61dcfd4fb1be42b762929c823ffe7, type: 3}
+  - {fileID: 8300000, guid: 8cb8460f043522643bb523cc2c2d9ff8, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: fea73a864eefc2f4abda01a180528f43, type: 3}
