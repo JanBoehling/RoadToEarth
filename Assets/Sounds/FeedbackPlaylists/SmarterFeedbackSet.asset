@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab405ebb16ef30c4cb8b102fa2364522, type: 3}
+  m_Name: SmarterFeedbackSet
+  m_EditorClassIdentifier: Assembly-CSharp::AudioSet
+  Set:
+  - {fileID: 8300000, guid: 98c12b9763faf57428807bdd19ab767d, type: 3}
+  - {fileID: 8300000, guid: bdfe3d79325352148b9b6fcb05d67965, type: 3}
+  - {fileID: 8300000, guid: bdfe3d79325352148b9b6fcb05d67965, type: 3}
