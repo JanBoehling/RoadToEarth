@@ -33,11 +33,11 @@ public class CleanupCaptcha : MonoBehaviour
         Destroy(obj);
         _objectsDestroyed++;
 
-        if (_objectsDestroyed == _primaryObjects.Length + 1) ToggleObjectInteraction(_secondaryObjects, true);
+        if (_objectsDestroyed == _primaryObjects.Length) ToggleObjectInteraction(_secondaryObjects, true);
 
-        if (_objectsDestroyed == _primaryObjects.Length + 1 + _secondaryObjects.Length) ToggleObjectInteraction(_tertiaryObjects, true);
+        if (_objectsDestroyed == _primaryObjects.Length + _secondaryObjects.Length) ToggleObjectInteraction(_tertiaryObjects, true);
 
-        if (_objectsDestroyed == _primaryObjects.Length + 1 + _secondaryObjects.Length + _tertiaryObjects.Length)
+        if (_objectsDestroyed == _primaryObjects.Length + _secondaryObjects.Length + _tertiaryObjects.Length)
         {
             StartCoroutine(EndWaitDelay(_endWaitDuration, EndCaptcha));
         }
