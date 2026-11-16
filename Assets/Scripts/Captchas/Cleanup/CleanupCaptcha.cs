@@ -48,7 +48,7 @@ public class CleanupCaptcha : MonoBehaviour
         CreateVeryDirtyAudioPlayerForValidateSFX();
 
         var controller = FindAnyObjectByType<CaptchaController>();
-        if (controller) controller.LoadNextCaptcha(true);
+        if (controller) controller.LoadNextCaptcha(false); // Finishing this will always evaluate to 'stupid' (false)
         else Debug.LogWarning("Count not find CaptchaController in scene!");
     }
 
