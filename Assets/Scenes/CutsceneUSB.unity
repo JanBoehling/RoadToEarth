@@ -450,7 +450,7 @@ MonoBehaviour:
   _playOnAwake: 1
   _isLooping: 1
   _volume: 1
-  _localClip: {fileID: 8300000, guid: aef3f352c5494461086f3fa61eb05da9, type: 3}
+  _localClip: {fileID: 8300000, guid: 20b78e212b1aec5488d1b95c6531249d, type: 3}
 --- !u!1 &1046133245
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.88699996, g: 0.295371, b: 0.2988308, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
